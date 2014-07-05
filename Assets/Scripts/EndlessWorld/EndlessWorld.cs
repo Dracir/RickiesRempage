@@ -7,8 +7,8 @@ public class EndlessWorld : MonoBehaviour {
 
 	public int seed;
 	public Random random;
-	public int worldCreationDistance=20;
-	public int worldCreationWidthToCreate=10;
+	public int worldCreationDistance=2;
+	public int worldCreationWidthToCreate=1;
 	public int statNbBuilding = 0;
 	public GameObject world;
 	public GameObject buildings;
@@ -17,8 +17,8 @@ public class EndlessWorld : MonoBehaviour {
 	public GameObject assetRoad;
 
 	void Start () {
-		world = GameObjectFactory.createGameObject ("Prefab/World");
-		buildings = GameObjectFactory.createGameObject ("Prefab/Buildings",world.transform);
+		world = GameObjectFactory.createGameObject ("World");
+		buildings = GameObjectFactory.createGameObject ("Buildings",world.transform);
 
 		random = new Random ();
 		Random.seed = seed;
@@ -28,8 +28,8 @@ public class EndlessWorld : MonoBehaviour {
 	}
 
 	void loadAssets(){
-		this.assetBuilding = Resources.Load<GameObject>("Building");
-		this.assetRoad = Resources.Load<GameObject>("Road");
+		this.assetBuilding = Resources.Load<GameObject>("Prefab/Building");
+		this.assetRoad = Resources.Load<GameObject>("Prefab/Road");
 	}
 
 	void Update () {
