@@ -10,6 +10,7 @@ public class EndlessWorld : MonoBehaviour {
 	public int worldCreationDistance=2;
 	public int worldCreationWidthToCreate=1;
 	public int statNbBuilding = 0;
+	public int buildingInARow = 0;
 	public GameObject world;
 	public GameObject buildings;
 
@@ -36,6 +37,7 @@ public class EndlessWorld : MonoBehaviour {
 		if (needToCreate ()) {
 			int widthRemaining = worldCreationWidthToCreate;
 			while(widthRemaining > 0){
+				//if(buildingInARow )
 				int widthCreated = generateOneBuilding();
 				widthRemaining -= widthCreated;
 			}
@@ -43,16 +45,22 @@ public class EndlessWorld : MonoBehaviour {
 	}
 
 	private bool needToCreate(){
-		Debug.Log (this.transform.position.x + worldCreationDistance);
 		return this.transform.position.x + worldCreationDistance > createdWorldDimension.x;
 	}
 
 	private int generateOneBuilding(){
 		statNbBuilding++;
-		int buildingWidth = 1;
-		GameObject newBuilding = GameObjectFactory.createCopyGameObject (this.assetBuilding, "Building" + statNbBuilding, this.buildings);
+		int buildingWidth = Random.Range(1,3);
+		GameObject newBuilding = GameObjectFactory.createGameObject ("BuildingPart" + statNbBuilding, this.buildings.transform);
+		for (int x = 0; x < buildingWidth; x++) {
+			for (int y = 0; y < Random.Range(1,5); y++) {
+				GameObject buildingPart = GameObjectFactory.createCopyGameObject (this.assetBuilding, "Part" + statNbBuilding, newBuilding);
+				buildingPart.transform.Translate(new Vector2(x,y));
+			}		
+		}
+		Debug.Log (buildingWidth * 2);
 		newBuilding.transform.Translate (createdWorldDimension);
-		createdWorldDimension = new Vector2 (createdWorldDimension.x + buildingWidth, createdWorldDimension.y);
-		return buildingWidth;
+		createdWorldDimension = new Vector2 (createdWorldDimension.x + buildingWidth * 2, createdWorldDimension.y);
+		return buildingWidth * 2;
 	}
 }
