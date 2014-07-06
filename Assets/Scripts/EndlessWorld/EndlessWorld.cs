@@ -55,7 +55,7 @@ public class EndlessWorld : MonoBehaviour {
 		Sprite buildingSprite = c.getRandomBuildingSprite ();
 		Sprite trimSprite = c.getRandomTrimSprite ();
 
-		creator.createBuilding (createdWorldDimension,buildingSprite, trimSprite, buildingWidth, buildingHeight);
+		creator.createBuilding (createdWorldDimension,buildingSprite, trimSprite, c.getRandomDoorSprite() , buildingWidth, buildingHeight);
 
 		float wholeWidth = buildingWidth * 2;
 		createdWorldDimension = new Vector2 (createdWorldDimension.x + wholeWidth, createdWorldDimension.y);

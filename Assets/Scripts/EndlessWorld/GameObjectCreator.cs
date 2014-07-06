@@ -7,6 +7,8 @@ public class GameObjectCreator {
 	private static Vector2 ROAD_COLLIDER_SIZE = new Vector2(1,4);
 	private static Vector2 BUILDING_COLLIDER_SIZE = new Vector2(2,2);
 	private static Vector2 TRIM_COLLIDER_SIZE = new Vector2(1,0.25f);
+	private static Vector2 DOOR_COLLIDER_SIZE = new Vector2(1f,0.5f);
+
 	private static Vector2 GARBAGE_COLLIDER_SIZE = new Vector2(0.5f,0.5f);
 
 	public GameObject world;
@@ -32,7 +34,7 @@ public class GameObjectCreator {
 	}
 
 
-	public void createBuilding(Vector2 position, Sprite wallSprite, Sprite trim, int buildingWidth, int buildingHeight){
+	public void createBuilding(Vector2 position, Sprite wallSprite, Sprite trim, Sprite[] door, int buildingWidth, int buildingHeight){
 		GameObject newBuilding = GameObjectFactory.createGameObject ("Building " + statNbBuilding, buildings.transform);
 		Transform parent = newBuilding.transform;
 		for (int x = 0; x < buildingWidth; x++) {
@@ -48,6 +50,9 @@ public class GameObjectCreator {
 			createTrim(parent, trim, new Vector2(trimX+1,0));
 			createTrim(parent, trim, new Vector2(trimX+1,buildingHeight*2 - 0.5f));
 		}
+
+		int doorX = Random.Range (0, buildingWidth);
+		createDoor (parent, new Vector2 (doorX, 0), door);
 
 		if (Random.Range (0, 100) < 70) {
 			createGarbage(position + new Vector2(1,0));
@@ -87,6 +92,16 @@ public class GameObjectCreator {
 		itemIntegrity.hp = 10;
 		trim.AddComponent<ExampleDestruction>();
 	}
+	
+	public void createDoor(Transform parent, Vector2 position, Sprite[] sprites){
+		GameObject prop = createSpriteGameObject (parent, -2, null, position, DOOR_COLLIDER_SIZE, true);
+		
+		ItemIntegrity itemIntegrity = prop.AddComponent<ItemIntegrity>();
+		itemIntegrity.hp = 100;
+		
+		Props propComp = prop.AddComponent<Props> ();
+		propComp.setSprites(sprites);
+	}
 
 	public void createGarbage(Vector2 position){
 		createProps (position, "Sprite/Props/LevelSprite-GarbageCan");
@@ -100,8 +115,7 @@ public class GameObjectCreator {
 		GameObject prop = createSpriteGameObject (props.transform, -2, null, position, GARBAGE_COLLIDER_SIZE, true);
 
 		ItemIntegrity itemIntegrity = prop.AddComponent<ItemIntegrity>();
-		itemIntegrity.hp = 100;
-		prop.AddComponent<ExampleDestruction>();
+		itemIntegrity.hp = 60;
 
 		Props propComp = prop.AddComponent<Props> ();
 		propComp.setName (spriteName);
