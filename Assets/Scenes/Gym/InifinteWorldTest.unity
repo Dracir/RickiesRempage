@@ -426,7 +426,6 @@ GameObject:
   - 20: {fileID: 1146744423}
   - 92: {fileID: 1146744422}
   - 124: {fileID: 1146744421}
-  - 81: {fileID: 1146744420}
   - 114: {fileID: 1146744425}
   - 114: {fileID: 1146744426}
   m_Layer: 0
@@ -436,13 +435,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1146744420
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1146744419}
-  m_Enabled: 1
 --- !u!124 &1146744421
 Behaviour:
   m_ObjectHideFlags: 0
@@ -466,7 +458,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -868,6 +860,7 @@ GameObject:
   - 61: {fileID: 2076042108}
   - 114: {fileID: 2076042107}
   - 95: {fileID: 2076042106}
+  - 81: {fileID: 2076042110}
   m_Layer: 0
   m_Name: Rickie
   m_TagString: Untagged
@@ -960,6 +953,13 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300014, guid: 78ecada089e755643a5e5b41f9e5adce, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!81 &2076042110
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2076042104}
+  m_Enabled: 1
 --- !u!1 &2136431113
 GameObject:
   m_ObjectHideFlags: 0
