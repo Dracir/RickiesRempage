@@ -45,82 +45,92 @@ TextureImporter:
     - name: SpriteSheet-Ricky_0
       rect:
         serializedVersion: 2
-        x: 71
+        x: 53
         y: 647
-        width: 138
-        height: 310
+        width: 172
+        height: 312
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpriteSheet-Ricky_1
       rect:
         serializedVersion: 2
-        x: 377
+        x: 363
         y: 647
-        width: 70
-        height: 310
+        width: 110
+        height: 312
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpriteSheet-Ricky_2
       rect:
         serializedVersion: 2
-        x: 640
+        x: 617
         y: 647
-        width: 135
-        height: 310
+        width: 162
+        height: 312
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpriteSheet-Ricky_3
       rect:
         serializedVersion: 2
-        x: 919
+        x: 901
         y: 647
-        width: 110
-        height: 310
+        width: 122
+        height: 312
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpriteSheet-Ricky_4
       rect:
         serializedVersion: 2
-        x: 1149
+        x: 1137
         y: 647
-        width: 134
-        height: 310
+        width: 160
+        height: 312
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpriteSheet-Ricky_5
       rect:
         serializedVersion: 2
-        x: 1447
+        x: 1427
         y: 647
-        width: 110
-        height: 310
+        width: 120
+        height: 312
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpriteSheet-Ricky_6
       rect:
         serializedVersion: 2
-        x: 89
+        x: 55
         y: 245
-        width: 190
+        width: 224
         height: 310
       alignment: 9
-      pivot: {x: .300467163, y: 0}
+      pivot: {x: .317408413, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpriteSheet-Ricky_7
       rect:
         serializedVersion: 2
-        x: 359
+        x: 327
+        y: 245
+        width: 170
+        height: 310
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpriteSheet-Ricky_8
+      rect:
+        serializedVersion: 2
+        x: 607
         y: 245
         width: 208
         height: 310
       alignment: 9
-      pivot: {x: .334304065, y: 0}
+      pivot: {x: .365929246, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
