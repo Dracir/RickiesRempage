@@ -26,7 +26,7 @@ public class Rickie : MonoBehaviour {
 	public Transform kickObject;
 	public Transform punchObject;
 	
-	float kickTiming = 0.8f;
+	float kickTiming = 0.55f;
 	float punchTiming = 0.2f;
 	float kickTimer = 0;
 	float punchTimer = 0;
@@ -38,12 +38,25 @@ public class Rickie : MonoBehaviour {
 		get{ return punchTimer > 0; }
 	}
 	
-	private int maxPower = 30;
+	public const int maxPower = 30;
 	private int currentPower;
 	public int ExtraDamage {
-		get { return currentPower; }
+		get { return currentPower > 0? currentPower : maxPower; }
 	}
 	
+	private bool IsRampaging {
+		get{ return currentPower < 0; }
+	}
+	
+	private float losePowerRate = 1f;
+	private float rageTickTiming = 0.4f;
+	private float hungerTimer = 0;
+	
+	private float LoseTiming {
+		get{
+			return IsRampaging? rageTickTiming : losePowerRate;
+		}
+	}
 	
 	protected virtual float Accelerate(float input){
 		float newX = velocity.x + input * (maxSpeed / secondsToMax) * Time.deltaTime;
@@ -95,6 +108,7 @@ public class Rickie : MonoBehaviour {
 	Transform t;
 	BoxCollider2D boxCol;
 	public static Rickie rickie;
+	private Animator anim;
 	// Use this for initialization
 	void Start () {
 		if (rickie == null){
@@ -109,6 +123,7 @@ public class Rickie : MonoBehaviour {
 		t = transform;
 		
 		currentPower = maxPower;
+		anim = GetComponent<Animator>();
 		
 	}
 	
@@ -180,20 +195,28 @@ public class Rickie : MonoBehaviour {
 		if (Input.GetButtonDown ("Kick") && !Kicking){
 			Debug.Log ("Kick!");
 			kickTimer = kickTiming;
-			Instantiate(kickObject, kickPoint.position, kickPoint.rotation);
+			anim.Play ("Kick");
 		}
 		
 		if (Input.GetButtonDown ("Punch") && !Punching){
 			punchTimer = punchTiming;
-			Instantiate(punchObject, punchPoint.position, punchPoint.rotation);
+			Transform duder = Instantiate(punchObject, punchPoint.position, punchPoint.rotation) as Transform;
+			duder.parent = punchPoint;
+			anim.Play ("Punch");
 		}
 		
 		if (Kicking){
 			kickTimer -= Time.deltaTime;
+			if (!Kicking){
+				anim.Play ("Stand");
+			}
 		}
 		
 		if (Punching){
 			punchTimer -= Time.deltaTime;
+			if (!Punching){
+				anim.Play ("Stand");
+			}
 		}
 		
 		//--------------------------------------------------------------------------\\
@@ -203,15 +226,22 @@ public class Rickie : MonoBehaviour {
 		
 		float horizontalAxis = Input.GetAxisRaw("Horizontal");
 		
+		if (Kicking || Punching){
+			horizontalAxis = 0;
+		}
 		
 		float newVelocityX = velocity.x;
 		if (horizontalAxis != 0){		//apply movement according to input
 			newVelocityX = Accelerate(horizontalAxis);
 			facing = (Directions) horizontalAxis;
 			t.localScale = new Vector3((float)facing, 1, 1);
+			anim.Play ("Walk");
 		}
 		else if (velocity.x != 0){		//apply deceleration due to no input
 			newVelocityX = Decelerate ();
+			if (!Kicking && !Punching){
+				anim.Play ("Stand");
+			}
 		}
 		
 		velocity = new Vector2(newVelocityX, velocity.y);
@@ -318,10 +348,25 @@ public class Rickie : MonoBehaviour {
 			transform.Translate(velocity * Time.deltaTime);
 		}
 		
+		hungerTimer += Time.deltaTime;
+		if (hungerTimer > LoseTiming){
+			currentPower --;
+			hungerTimer = Time.deltaTime;
+			if (IsRampaging){
+				GUIHandler.instance.RampageTick();
+			}else {
+				GUIHandler.instance.LosePower();
+			}
+		}
 	}
 	
 	void LateUpdate () {
 		
+	}
+	
+	void SpawnKick () {
+		Transform duder = Instantiate(kickObject, kickPoint.position, kickPoint.rotation) as Transform;
+		duder.parent = punchPoint;
 	}
 }
 
