@@ -37,6 +37,7 @@ public class Props : MonoBehaviour {
 	
 	void Destroyed() {
 		sr.sprite = sprites[3];
+		AudioPlayer.Play("Destruction_Glass_Big",this.gameObject);
 		Destroy (this.GetComponent<BoxCollider2D> ());
 	}
 
