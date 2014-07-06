@@ -201,6 +201,58 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   protoCell: {fileID: 761253256}
   scoreObject: {fileID: 2136431115}
+  popupConfiguration:
+    font: {fileID: 0}
+    sizeVariation:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    baseFontSize: 0
+    gradient:
+      key0:
+        serializedVersion: 2
+        rgba: 4294967295
+      key1:
+        serializedVersion: 2
+        rgba: 4294967295
+      key2:
+        serializedVersion: 2
+        rgba: 0
+      key3:
+        serializedVersion: 2
+        rgba: 0
+      key4:
+        serializedVersion: 2
+        rgba: 0
+      key5:
+        serializedVersion: 2
+        rgba: 0
+      key6:
+        serializedVersion: 2
+        rgba: 0
+      key7:
+        serializedVersion: 2
+        rgba: 0
+      ctime0: 0
+      ctime1: 65535
+      ctime2: 0
+      ctime3: 0
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+    lifetime: 0
 --- !u!4 &157605403
 Transform:
   m_ObjectHideFlags: 0
@@ -553,6 +605,51 @@ MonoBehaviour:
     maxDistance: 500
   sFX:
   - references: {fileID: 1242177590}
+    name: Character_Jump
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 78945cee08beca24484d3ed017c95fd3, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1242177590}
+    name: Character_Swoosh_Kick
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: dfcbca6e55bb0c443bae83e01e9205a5, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1242177590}
+    name: Character_Swoosh_Punch
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 4ba21eec1a94ae4478fad924f830aec6, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1242177590}
     name: Destruction_Glass_Big
     audioSource: {fileID: 0}
     clip: {fileID: 8300000, guid: b15a59fc1b806924aa2702dc6f7acef5, type: 3}
@@ -591,6 +688,171 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     randomPitch: .25
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1242177590}
+    name: Destruction_Multiple_Big
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 6d60cf33b56acd74aabbef6ed1706368, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1242177590}
+    name: Destruction_Rock_Big
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: ec8c52c293d89b34bb75fed2d4183355, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1242177590}
+    name: Destruction_Rock_Medium
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 6495d459096df3e4897a4caa25ab97d3, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1242177590}
+    name: Destruction_Rock_Small
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 6d6e6e9ea5f733e419ae179dec1c7c70, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1242177590}
+    name: Destruction_Wood_Big
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: d5ff4602317eef144a6b2a12e5e2d4c1, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1242177590}
+    name: Destruction_Wood_Medium
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 33831a8e0d2eeb945b5592e82c4e595c, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1242177590}
+    name: Destruction_Wood_Small
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: e16ed2729aa2ab243a4a40b5830c6f48, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1242177590}
+    name: Hit_Metal_Big
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 43ebfe78e15a96541af751f131da3d9b, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1242177590}
+    name: Hit_Metal_Medium
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 7f8a8ff9bea3bec4ebc97e04b2fa4ceb, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1242177590}
+    name: Hit_Metal_Small
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 277a8b19bc61187409f10bbbad84280b, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1242177590}
+    name: Menu_Move
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: a0b81d4000de0584dade55fe8d288a3c, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
     dopplerLevel: 0
     rolloffMode: 1
     minDistance: 0
@@ -676,6 +938,21 @@ MonoBehaviour:
     name: Menu_Play-03
     audioSource: {fileID: 0}
     clip: {fileID: 8300000, guid: 64547877670588549955e67e7134e819, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1242177590}
+    name: Menu_Select
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: ed45f3b881d49e249a73f527ee17626b, type: 3}
     loop: 0
     priority: 128
     volume: 1
@@ -931,6 +1208,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.size
+      value: 39
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -962,6 +1243,546 @@ Prefab:
     - target: {fileID: 400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
       propertyPath: m_RootMapOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[24].references
+      value: 
+      objectReference: {fileID: 1242177590}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[24].name
+      value: Character_Jump
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[24].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 78945cee08beca24484d3ed017c95fd3, type: 3}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[24].priority
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[24].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[24].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[24].rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[24].panLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[24].maxDistance
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[25].references
+      value: 
+      objectReference: {fileID: 1242177590}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[25].name
+      value: Character_Swoosh_Kick
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[25].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: dfcbca6e55bb0c443bae83e01e9205a5, type: 3}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[25].priority
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[25].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[25].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[25].rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[25].panLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[25].maxDistance
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[26].references
+      value: 
+      objectReference: {fileID: 1242177590}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[26].name
+      value: Character_Swoosh_Punch
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[26].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4ba21eec1a94ae4478fad924f830aec6, type: 3}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[26].priority
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[26].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[26].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[26].rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[26].panLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[26].maxDistance
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[27].references
+      value: 
+      objectReference: {fileID: 1242177590}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[27].name
+      value: Destruction_Multiple_Big
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[27].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6d60cf33b56acd74aabbef6ed1706368, type: 3}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[27].priority
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[27].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[27].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[27].rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[27].panLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[27].maxDistance
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[28].references
+      value: 
+      objectReference: {fileID: 1242177590}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[28].name
+      value: Destruction_Rock_Big
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[28].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: ec8c52c293d89b34bb75fed2d4183355, type: 3}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[28].priority
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[28].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[28].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[28].rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[28].panLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[28].maxDistance
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[29].references
+      value: 
+      objectReference: {fileID: 1242177590}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[29].name
+      value: Destruction_Rock_Medium
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[29].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6495d459096df3e4897a4caa25ab97d3, type: 3}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[29].priority
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[29].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[29].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[29].rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[29].panLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[29].maxDistance
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[30].references
+      value: 
+      objectReference: {fileID: 1242177590}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[30].name
+      value: Destruction_Rock_Small
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[30].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6d6e6e9ea5f733e419ae179dec1c7c70, type: 3}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[30].priority
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[30].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[30].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[30].rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[30].panLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[30].maxDistance
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[31].references
+      value: 
+      objectReference: {fileID: 1242177590}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[31].name
+      value: Destruction_Wood_Big
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[31].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: d5ff4602317eef144a6b2a12e5e2d4c1, type: 3}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[31].priority
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[31].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[31].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[31].rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[31].panLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[31].maxDistance
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[32].references
+      value: 
+      objectReference: {fileID: 1242177590}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[32].name
+      value: Destruction_Wood_Medium
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[32].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 33831a8e0d2eeb945b5592e82c4e595c, type: 3}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[32].priority
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[32].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[32].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[32].rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[32].panLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[32].maxDistance
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[33].references
+      value: 
+      objectReference: {fileID: 1242177590}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[33].name
+      value: Destruction_Wood_Small
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[33].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: e16ed2729aa2ab243a4a40b5830c6f48, type: 3}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[33].priority
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[33].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[33].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[33].rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[33].panLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[33].maxDistance
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[34].references
+      value: 
+      objectReference: {fileID: 1242177590}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[34].name
+      value: Hit_Metal_Big
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[34].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 43ebfe78e15a96541af751f131da3d9b, type: 3}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[34].priority
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[34].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[34].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[34].rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[34].panLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[34].maxDistance
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[35].references
+      value: 
+      objectReference: {fileID: 1242177590}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[35].name
+      value: Hit_Metal_Medium
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[35].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7f8a8ff9bea3bec4ebc97e04b2fa4ceb, type: 3}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[35].priority
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[35].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[35].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[35].rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[35].panLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[35].maxDistance
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[36].references
+      value: 
+      objectReference: {fileID: 1242177590}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[36].name
+      value: Hit_Metal_Small
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[36].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 277a8b19bc61187409f10bbbad84280b, type: 3}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[36].priority
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[36].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[36].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[36].rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[36].panLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[36].maxDistance
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[37].references
+      value: 
+      objectReference: {fileID: 1242177590}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[37].name
+      value: Menu_Move
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[37].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: a0b81d4000de0584dade55fe8d288a3c, type: 3}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[37].priority
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[37].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[37].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[37].rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[37].panLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[37].maxDistance
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[38].references
+      value: 
+      objectReference: {fileID: 1242177590}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[38].name
+      value: Menu_Move
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[38].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: ed45f3b881d49e249a73f527ee17626b, type: 3}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[38].priority
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[38].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[38].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[38].rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[38].panLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: sFX.Array.data[38].maxDistance
+      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_DeprecatedTransformRoot: {fileID: 0}
