@@ -5,7 +5,6 @@ using System.Collections;
 public class Props : MonoBehaviour {
 
 	private SpriteRenderer sr;
-	public string spriteName;
 
 	public Sprite[] sprites;
 
@@ -14,31 +13,34 @@ public class Props : MonoBehaviour {
 	}
 
 	public void setName(string spriteName){
-		this.spriteName = spriteName;
 		sr = this.GetComponent<SpriteRenderer> ();
 
 		sprites = Resources.LoadAll<Sprite> (spriteName);
 		
 		sr.sprite = sprites[0];
 	}
-	
+
+	public void setSprites(Sprite[] s){
+		sr = this.GetComponent<SpriteRenderer> ();
+		this.sprites = s;
+		sr.sprite = sprites[0];
+	}
+
 	// Update is called once per frame
 	void Update () {
 	
 	}
 
 	void HalfHealth () {
-		Debug.Log ("YOO 1/2");
 		sr.sprite = sprites[2];
 	}
 	
 	void Destroyed() {
-		Debug.Log ("YOO");
 		sr.sprite = sprites[3];
+		Destroy (this.GetComponent<BoxCollider2D> ());
 	}
 
 	void Hit(){
-		Debug.Log ("aaa");
 		sr.sprite = sprites[1];
 	}
 }
