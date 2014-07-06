@@ -3,8 +3,6 @@ using System.Collections;
 
 public class Food : MonoBehaviour {
 	
-	
-	
 	public int powerValue = 15;
 	
 	private float gravity = 8f;
@@ -23,7 +21,11 @@ public class Food : MonoBehaviour {
 	private Transform t;
 	private BoxCollider2D boxCol;
 	private int verticalRays = 4;
-	int layerMask;
+	private int layerMask;
+	
+	private float collectDelay = 0.25f;
+	private bool canCollect = false;
+	
 	// Use this for initialization
 	void Start () {
 		velocity = Random.insideUnitCircle * speed;
@@ -32,7 +34,7 @@ public class Food : MonoBehaviour {
 		t = transform;
 		boxCol = GetComponent<BoxCollider2D>();
 		layerMask = 1 << LayerMask.NameToLayer("NormalCollisions");
-		
+		Invoke ("CanCollect", collectDelay);
 	}
 	// Update is called once per frame
 	void FixedUpdate () {
@@ -98,11 +100,18 @@ public class Food : MonoBehaviour {
 	}
 	
 	void OnTriggerEnter2D (Collider2D other){
+		if (!canCollect){
+			return;
+		}
 		Rickie rick = other.GetComponent<Rickie>();
 		
 		if (rick){
 			rick.AddPower(powerValue);
 			Destroy (gameObject);
 		}
+	}
+	
+	void CanCollect () {
+		canCollect = true;
 	}
 }
