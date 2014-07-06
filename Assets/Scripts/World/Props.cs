@@ -14,6 +14,8 @@ public class Props : MonoBehaviour {
 	public float halfLifeShake;
 	public float shakeStrenght;
 	public Vector3 destroyedTranslation;
+	public int pointsForDestroyed;
+	public int pointsForHited;
 
 	private float shakeTime;
 	private Vector3 initialPosition;
@@ -68,6 +70,7 @@ public class Props : MonoBehaviour {
 		this.transform.Translate(destroyedTranslation);
 		destroyed = true;
 		SendMessage ("SpawnFood", SendMessageOptions.DontRequireReceiver);
+		GUIHandler.instance.AddPoints (this.transform.position,pointsForDestroyed);
 	}
 
 	void Hit(){
@@ -78,6 +81,7 @@ public class Props : MonoBehaviour {
 		}
 
 		startShake (hitShake);
+		GUIHandler.instance.AddPoints (this.transform.position, pointsForHited);
 	}
 
 	private void startShake(float time){

@@ -12,6 +12,8 @@ public class GUIHandler : MonoBehaviour {
 	public static int score = 0;
 	
 	public static GUIHandler instance;
+
+	public PopupConfiguration popupConfiguration;
 	
 	// Use this for initialization
 	private string initScoreString;
@@ -95,7 +97,15 @@ public class GUIHandler : MonoBehaviour {
 			cells[i].Activate ();
 		}
 	}
-	
+
+	public void AddPoints(Vector3 pointSource, int value){
+		Vector3 v = this.scoreObject.transform.position;
+		Vector2 v2 = new Vector2 (v.x * Screen.width, (1-v.y + 0.05f) * Screen.height);
+		PopupText p = PopupFactory.makeLinearPopup (this.popupConfiguration, value + "", Camera.main.WorldToScreenPoint (pointSource), v2, 0.1f, 0.9f);
+		ScreenEffectSystem.AddScreenEffect (p);
+		AddPoints (value);
+	}
+
 	public void AddPoints(int value){
 		score += value;
 		string scoreString = score.ToString();

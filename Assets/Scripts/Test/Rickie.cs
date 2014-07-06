@@ -193,7 +193,6 @@ public class Rickie : MonoBehaviour {
 		//----------------------------------KICK------------------------------------\\
 		//--------------------------------------------------------------------------\\
 		if (Input.GetButtonDown ("Kick") && !Kicking){
-			Debug.Log ("Kick!");
 			kickTimer = kickTiming;
 			anim.Play ("Kick");
 		}
@@ -372,8 +371,6 @@ public class Rickie : MonoBehaviour {
 	public void AddPower(int value){
 		currentPower = Mathf.Min (currentPower + value, maxPower);
 		GUIHandler.instance.AddPower(value);
-		Debug.Log ("POWER!");
-		
 	}
 }
 
