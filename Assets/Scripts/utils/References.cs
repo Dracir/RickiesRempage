@@ -4,8 +4,8 @@ using System.Collections;
 [ExecuteInEditMode]
 public class References : MonoBehaviour {
 	
-	public AudioSettings[] sFX;
 	public AudioSettings[] music;
+	public AudioSettings[] sFX;
 	
 	static public AudioSettings[] SFX;
 	static public AudioSettings[] Music;
@@ -27,19 +27,6 @@ public class References : MonoBehaviour {
 	}
 			
 	void SetReferences(){
-		foreach (AudioSettings sound in sFX){
-			sound.references = this;
-			sound.name = sound.clip.name;
-			sound.priority = Mathf.Clamp(sound.priority, 0, 255);
-			sound.volume = Mathf.Clamp01(sound.volume);
-			sound.dopplerLevel = Mathf.Clamp(sound.dopplerLevel, 0, 5);
-			sound.minDistance = Mathf.Max(sound.minDistance, 0);
-			sound.panLevel = Mathf.Clamp01(sound.panLevel);
-			sound.spread = Mathf.Clamp(sound.spread, 0, 360);
-			sound.maxDistance = Mathf.Max(sound.maxDistance, 1.01F);
-		}
-		SFX = sFX;
-		
 		foreach (AudioSettings sound in music){
 			sound.references = this;
 			sound.name = sound.clip.name;
@@ -51,7 +38,22 @@ public class References : MonoBehaviour {
 			sound.spread = Mathf.Clamp(sound.spread, 0, 360);
 			sound.maxDistance = Mathf.Max(sound.maxDistance, 1.01F);
 		}
+//		music = AudioSettings.Sort(music);
 		Music = music;
+		
+		foreach (AudioSettings sound in sFX){
+			sound.references = this;
+			sound.name = sound.clip.name;
+			sound.priority = Mathf.Clamp(sound.priority, 0, 255);
+			sound.volume = Mathf.Clamp01(sound.volume);
+			sound.dopplerLevel = Mathf.Clamp(sound.dopplerLevel, 0, 5);
+			sound.minDistance = Mathf.Max(sound.minDistance, 0);
+			sound.panLevel = Mathf.Clamp01(sound.panLevel);
+			sound.spread = Mathf.Clamp(sound.spread, 0, 360);
+			sound.maxDistance = Mathf.Max(sound.maxDistance, 1.01F);
+		}
+//		sFX = AudioSettings.Sort(sFX);
+		SFX = sFX;
 	}
 	
 	[System.Serializable]
@@ -111,5 +113,28 @@ public class References : MonoBehaviour {
 				Destroy(audioSource.gameObject);
 			}
 		}
+		
+		static public AudioSettings[] Sort(AudioSettings[] audioSettings){
+			string[] names = new string[audioSettings.Length];
+			AudioSettings[] sortedAudioSettings = new AudioSettings[audioSettings.Length];
+			
+			for (int i = 0; i < audioSettings.Length; i++){
+				names[i] = audioSettings[i].name;
+			}
+			
+			System.Array.Sort(names);
+			
+			for (int i = 0; i < audioSettings.Length; i++){
+				foreach (AudioSettings sound in audioSettings){
+					if (sound.name == names[i]){
+						sortedAudioSettings[i] = sound;
+						break;
+					}
+				}
+			}
+			
+			return sortedAudioSettings;
+		}
+		                   
 	}
 }
