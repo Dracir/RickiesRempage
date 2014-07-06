@@ -71,4 +71,24 @@ public class GUIHandler : MonoBehaviour {
 		}
 		Debug.Log ("GAME OVER");
 	}
+	
+	public void AddPower(int value){
+		int index = 0;
+		Debug.Log ("I am an adder of power");
+		for (index = cells.Length - 1; index >= 0; index --){
+			if (cells[index].IsActive){
+				index --;
+				break;
+			}
+		}
+		
+		for (int i = index; i < index + value; i ++){
+			if (i >= cells.Length){
+				Debug.Log ("Returning because of out of stuff");
+				return;
+			}
+			cells[i].Activate ();
+			Debug.Log ("Activating cell" + i);
+		}
+	}
 }
