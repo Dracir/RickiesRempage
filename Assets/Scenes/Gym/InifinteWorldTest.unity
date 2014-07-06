@@ -245,6 +245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   protoCell: {fileID: 761253256}
+  scoreObject: {fileID: 2136431115}
 --- !u!4 &157605403
 Transform:
   m_ObjectHideFlags: 0
@@ -426,7 +427,6 @@ GameObject:
   - 20: {fileID: 1146744423}
   - 92: {fileID: 1146744422}
   - 124: {fileID: 1146744421}
-  - 81: {fileID: 1146744420}
   - 114: {fileID: 1146744425}
   - 114: {fileID: 1146744426}
   m_Layer: 0
@@ -436,13 +436,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1146744420
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1146744419}
-  m_Enabled: 1
 --- !u!124 &1146744421
 Behaviour:
   m_ObjectHideFlags: 0
@@ -466,7 +459,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -525,14 +518,13 @@ MonoBehaviour:
         width: 7
         height: 7
       buildingSprites:
-      - {fileID: 21300000, guid: 2c305ac8baab6c04383baf84b011f902, type: 3}
       - {fileID: 21300000, guid: dc1c4c8f9d0215e40a9ad38613a93373, type: 3}
+      - {fileID: 21300000, guid: 2c305ac8baab6c04383baf84b011f902, type: 3}
       - {fileID: 21300000, guid: 832ec3dc53ea9a748bb9e7f2c5cbcf2c, type: 3}
       trimSprites:
       - {fileID: 21300000, guid: 947c7476f75528345b0e0a152474bc85, type: 3}
       - {fileID: 21300000, guid: 124e8056d411a0a478246a38118d5470, type: 3}
       doorsSprites:
-      - {fileID: 21300000, guid: 6b70b66c05b9edc46bb6e48a06c1ed58, type: 3}
       - {fileID: 21300000, guid: 6b70b66c05b9edc46bb6e48a06c1ed58, type: 3}
       windowsSprites:
       - {fileID: 21300000, guid: 71d8bb56b95e242428759a0b5e355a40, type: 3}
@@ -588,130 +580,380 @@ MonoBehaviour:
   sFX:
   - references: {fileID: 1242177590}
     name: Destruction_Glass_Big
+    audioSource: {fileID: 0}
     clip: {fileID: 8300000, guid: b15a59fc1b806924aa2702dc6f7acef5, type: 3}
     loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
     randomPitch: .25
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
   - references: {fileID: 1242177590}
     name: Destruction_Glass_Medium
+    audioSource: {fileID: 0}
     clip: {fileID: 8300000, guid: 92cb38cb4d44ec44787f459ee29ffc57, type: 3}
     loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
     randomPitch: .25
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
   - references: {fileID: 1242177590}
     name: Destruction_Glass_Small
+    audioSource: {fileID: 0}
     clip: {fileID: 8300000, guid: cede6a8775d371043866a87d92aeb993, type: 3}
     loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
     randomPitch: .25
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
   - references: {fileID: 1242177590}
     name: Menu_Pause-01
+    audioSource: {fileID: 0}
     clip: {fileID: 8300000, guid: b7e46170b2906c4489bba6e07a4261fa, type: 3}
     loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
     randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
   - references: {fileID: 1242177590}
     name: Menu_Pause-02
+    audioSource: {fileID: 0}
     clip: {fileID: 8300000, guid: 65c551484ffcca949bcfd9a8702673d6, type: 3}
     loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
     randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
   - references: {fileID: 1242177590}
     name: Menu_Pause-03
+    audioSource: {fileID: 0}
     clip: {fileID: 8300000, guid: bfa7bf7680840d74dbb15413f18f9404, type: 3}
     loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
     randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
   - references: {fileID: 1242177590}
     name: Menu_Play-01
+    audioSource: {fileID: 0}
     clip: {fileID: 8300000, guid: 4450fa7495a30a443aba2606d7e5256f, type: 3}
     loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
     randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
   - references: {fileID: 1242177590}
     name: Menu_Play-02
+    audioSource: {fileID: 0}
     clip: {fileID: 8300000, guid: 53fe140580876c74089497d57d468736, type: 3}
     loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
     randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
   - references: {fileID: 1242177590}
     name: Menu_Play-03
+    audioSource: {fileID: 0}
     clip: {fileID: 8300000, guid: 64547877670588549955e67e7134e819, type: 3}
     loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
     randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
   - references: {fileID: 1242177590}
     name: Voice_Rampage-01
+    audioSource: {fileID: 0}
     clip: {fileID: 8300000, guid: 6094d9e31cefd2b47afe64f0b4139809, type: 3}
     loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
     randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
   - references: {fileID: 1242177590}
     name: Voice_Rampage-02
+    audioSource: {fileID: 0}
     clip: {fileID: 8300000, guid: 65b0307f6f71b3147b1f6c571948a780, type: 3}
     loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
     randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
   - references: {fileID: 1242177590}
     name: Voice_Rampage-03
+    audioSource: {fileID: 0}
     clip: {fileID: 8300000, guid: 996353994acea6b41ad0ed740bc8f7e6, type: 3}
     loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
     randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
   - references: {fileID: 1242177590}
     name: Voice_RickysRampage_v1-01
+    audioSource: {fileID: 0}
     clip: {fileID: 8300000, guid: ba5342cfee5efdf4092b351ebfaf216b, type: 3}
     loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
     randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
   - references: {fileID: 1242177590}
     name: Voice_RickysRampage_v1-02
+    audioSource: {fileID: 0}
     clip: {fileID: 8300000, guid: ed2bb08d726dd7d4393b9dbb49495896, type: 3}
     loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
     randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
   - references: {fileID: 1242177590}
     name: Voice_RickysRampage_v1-03
+    audioSource: {fileID: 0}
     clip: {fileID: 8300000, guid: 6b5e0638f884eba4682b5670b040a6da, type: 3}
     loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
     randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
   - references: {fileID: 1242177590}
     name: Voice_RickysRampage_v2-01
+    audioSource: {fileID: 0}
     clip: {fileID: 8300000, guid: 89efde130347b9d419cf527ad0c953c9, type: 3}
     loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
     randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
   - references: {fileID: 1242177590}
     name: Voice_RickysRampage_v2-02
+    audioSource: {fileID: 0}
     clip: {fileID: 8300000, guid: ebd93f15f2212684391f4513e0d77e51, type: 3}
     loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
     randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
   - references: {fileID: 1242177590}
     name: Voice_RickysRampage_v2-03
+    audioSource: {fileID: 0}
     clip: {fileID: 8300000, guid: c933aea6efa9ff4408e998123144c3ef, type: 3}
     loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
     randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
   - references: {fileID: 1242177590}
     name: Voice_RickysRampage_v3-01
+    audioSource: {fileID: 0}
     clip: {fileID: 8300000, guid: 3e88aa61895188943bdf22262a5552fb, type: 3}
     loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
     randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
   - references: {fileID: 1242177590}
     name: Voice_RickysRampage_v3-02
+    audioSource: {fileID: 0}
     clip: {fileID: 8300000, guid: ff4963b699b9f2845a04041249de4f33, type: 3}
     loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
     randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
   - references: {fileID: 1242177590}
     name: Voice_RickysRampage_v3-03
+    audioSource: {fileID: 0}
     clip: {fileID: 8300000, guid: 94c7e5d37220f834f8bbe03ec01b75c2, type: 3}
     loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
     randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
   - references: {fileID: 1242177590}
     name: YouLose-01
+    audioSource: {fileID: 0}
     clip: {fileID: 8300000, guid: 18676519c2880144d876fb455e423ee1, type: 3}
     loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
     randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
   - references: {fileID: 1242177590}
     name: YouLose-02
+    audioSource: {fileID: 0}
     clip: {fileID: 8300000, guid: ad12c9f9d3291df45999d329db06f698, type: 3}
     loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
     randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
   - references: {fileID: 1242177590}
     name: YouLose-03
+    audioSource: {fileID: 0}
     clip: {fileID: 8300000, guid: 816cfb8a094eeb5408f5bd65fdbc7dd2, type: 3}
     loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
     randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
   music:
   - references: {fileID: 1242177590}
     name: Rampage
+    audioSource: {fileID: 0}
     clip: {fileID: 8300000, guid: 2771fb3e5a1fcf94796d56a7eb54b4e3, type: 3}
     loop: 1
+    priority: 128
+    volume: 1
+    pitch: 1
     randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 0
+    spread: 0
+    maxDistance: 500
 --- !u!4 &1242177591
 Transform:
   m_ObjectHideFlags: 0
@@ -868,6 +1110,7 @@ GameObject:
   - 61: {fileID: 2076042108}
   - 114: {fileID: 2076042107}
   - 95: {fileID: 2076042106}
+  - 81: {fileID: 2076042110}
   m_Layer: 0
   m_Name: Rickie
   m_TagString: Untagged
@@ -960,6 +1203,13 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300014, guid: 78ecada089e755643a5e5b41f9e5adce, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!81 &2076042110
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2076042104}
+  m_Enabled: 1
 --- !u!1 &2136431113
 GameObject:
   m_ObjectHideFlags: 0

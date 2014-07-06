@@ -4,12 +4,12 @@ using System.Collections;
 [System.Serializable]
 public class GameObjectCreator {
 
-	private static Vector2 ROAD_COLLIDER_SIZE = new Vector2(1,4);
+	private static Vector2 ROAD_COLLIDER_SIZE = new Vector2(1,3.7f);
 	private static Vector2 BUILDING_COLLIDER_SIZE = new Vector2(2,2);
 	private static Vector2 TRIM_COLLIDER_SIZE = new Vector2(1,0.25f);
-	private static Vector2 DOOR_COLLIDER_SIZE = new Vector2(1f,0.5f);
+	private static Vector2 DOOR_COLLIDER_SIZE = new Vector2(1f,2f);
 
-	private static Vector2 GARBAGE_COLLIDER_SIZE = new Vector2(0.5f,0.5f);
+	private static Vector2 GARBAGE_COLLIDER_SIZE = new Vector2(1.25f,1.7f);
 
 	public GameObject world;
 	public GameObject buildings;
@@ -46,19 +46,21 @@ public class GameObjectCreator {
 			createRoad(new Vector2(roadX + 1f,0));
 			float trimX = x*2 - (1f/2f);
 			createTrim(parent, trim, new Vector2(trimX,0));
-			createTrim(parent, trim, new Vector2(trimX,buildingHeight*2 - 0.5f));
+			createTrim(parent, trim, new Vector2(trimX,buildingHeight*2 - 0.1f));
 			createTrim(parent, trim, new Vector2(trimX+1,0));
-			createTrim(parent, trim, new Vector2(trimX+1,buildingHeight*2 - 0.5f));
+			createTrim(parent, trim, new Vector2(trimX+1,buildingHeight*2 - 0.1f));
 		}
 
 		int doorX = Random.Range (0, buildingWidth);
 		createDoor (parent, new Vector2 (doorX, 0), door);
 
 		if (Random.Range (0, 100) < 70) {
-			createGarbage(position + new Vector2(1,0));
-		}
-		if (Random.Range (0, 100) < 40) {
-			createRecycle(position + new Vector2(2,0));
+			createGarbage(position + new Vector2(doorX + Random.Range(1.3f,2f),-0.2f));
+			if (Random.Range (0, 100) < 50) {
+				createRecycle(position + new Vector2(doorX + Random.Range(3f,4f),-0.2f));
+			}
+		}else if (Random.Range (0, 100) < 60) {
+			createRecycle(position + new Vector2(doorX + Random.Range(1.3f,2f),-0.2f));
 		}
 		
 		statNbBuilding++;
@@ -69,24 +71,24 @@ public class GameObjectCreator {
 	public void createRoad(Vector2 position){
 		Sprite roadSprite = roadSprites [Random.Range (0, roadSprites.Length-1)];
 		Vector2 p = new Vector2 (position.x , position.y - 3f);
-		createSpriteGameObject (roads.transform, -2, roadSprite, p, ROAD_COLLIDER_SIZE, false);
+		createSpriteGameObject (roads.transform, -20, roadSprite, p, ROAD_COLLIDER_SIZE, false);
 	}
 	public void createRoad(Vector2 position, Sprite sprite){
 		Vector2 p = new Vector2 (position.x , position.y - 3f);
-		createSpriteGameObject (roads.transform, -2, sprite, p, ROAD_COLLIDER_SIZE, false);
+		createSpriteGameObject (roads.transform, -20, sprite, p, ROAD_COLLIDER_SIZE, false);
 	}
 
 	public void createBuildingPart(Transform parent, Sprite sprite, Vector2 position){
-		GameObject part = createSpriteGameObject(parent, -10, sprite, position, BUILDING_COLLIDER_SIZE, true);
+		/*GameObject part = */createSpriteGameObject(parent, -10, sprite, position, BUILDING_COLLIDER_SIZE, true);
 
-		ItemIntegrity itemIntegrity = part.AddComponent<ItemIntegrity>();
-		itemIntegrity.hp = 10;
-		part.AddComponent<ExampleDestruction>();
+		//ItemIntegrity itemIntegrity = part.AddComponent<ItemIntegrity>();
+		//itemIntegrity.hp = 10;
+		//part.AddComponent<ExampleDestruction>();
 	}
 
 	public void createTrim(Transform parent, Sprite sprite, Vector2 position){
-		Vector2 p = new Vector2 (position.x , position.y - 0.75f);
-		GameObject trim = createSpriteGameObject(parent, -3, sprite, p, TRIM_COLLIDER_SIZE, true);
+		Vector2 p = new Vector2 (position.x , position.y - 0.88f);
+		GameObject trim = createSpriteGameObject(parent, -9, sprite, p, TRIM_COLLIDER_SIZE, true);
 
 		ItemIntegrity itemIntegrity = trim.AddComponent<ItemIntegrity>();
 		itemIntegrity.hp = 10;
@@ -94,13 +96,23 @@ public class GameObjectCreator {
 	}
 	
 	public void createDoor(Transform parent, Vector2 position, Sprite[] sprites){
-		GameObject prop = createSpriteGameObject (parent, -2, null, position, DOOR_COLLIDER_SIZE, true);
+		GameObject prop = createSpriteGameObject (parent, -8, null, position, DOOR_COLLIDER_SIZE, true);
 		
 		ItemIntegrity itemIntegrity = prop.AddComponent<ItemIntegrity>();
 		itemIntegrity.hp = 100;
 		
 		Props propComp = prop.AddComponent<Props> ();
+		propComp.destroyedShake = 0.25f;
+		propComp.destructionSound = "Destruction_Glass_Big";
+		propComp.halfLifeShake = 0.3f;
+		propComp.hitShake = 0.1f;
+		propComp.hitSound = "Destruction_Glass_Small";
+		propComp.shakeStrenght = 0.05f;
 		propComp.setSprites(sprites);
+
+		FoodSpawner fs = prop.AddComponent<FoodSpawner>();
+		fs.minFood = 2;
+		fs.minFood = 3;
 	}
 
 	public void createGarbage(Vector2 position){
@@ -115,10 +127,21 @@ public class GameObjectCreator {
 		GameObject prop = createSpriteGameObject (props.transform, -2, null, position, GARBAGE_COLLIDER_SIZE, true);
 
 		ItemIntegrity itemIntegrity = prop.AddComponent<ItemIntegrity>();
-		itemIntegrity.hp = 60;
+		itemIntegrity.hp = 40;
 
 		Props propComp = prop.AddComponent<Props> ();
 		propComp.setName (spriteName);
+		propComp.destroyedShake = 0.35f;
+		propComp.destructionSound = "Destruction_Glass_Big";
+		propComp.halfLifeShake = 0.4f;
+		propComp.hitShake = 0.15f;
+		propComp.hitSound = "Destruction_Glass_Small";
+		propComp.shakeStrenght = 0.1f;
+		propComp.destroyedTranslation = new Vector3 (0,-0.3f,0);
+
+		FoodSpawner fs = prop.AddComponent<FoodSpawner>();
+		fs.minFood = 0;
+		fs.minFood = 1;
 	}
 
 

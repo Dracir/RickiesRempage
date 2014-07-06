@@ -124,7 +124,7 @@ public class Rickie : MonoBehaviour {
 		
 		currentPower = maxPower;
 		anim = GetComponent<Animator>();
-		
+		anim.Play ("Stand");
 	}
 	
 	// Update is called once per frame
@@ -373,6 +373,7 @@ public class Rickie : MonoBehaviour {
 		currentPower = Mathf.Min (currentPower + value, maxPower);
 		GUIHandler.instance.AddPower(value);
 		Debug.Log ("POWER!");
+		
 	}
 }
 

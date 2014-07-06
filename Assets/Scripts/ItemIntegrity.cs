@@ -12,13 +12,12 @@ public class ItemIntegrity : MonoBehaviour {
 	
 	public void SubtractIntegrity (int amount){
 		hp -= amount;
-		Debug.Log ("my new health is " + hp);
 		if (hp < (initHP / 2) && hp >0) {
 			SendMessage ("HalfHealth");
 		} else if (hp <= 0) {
 			SendMessage ("Destroyed");
 		} else {
-			SendMessage("Hit");			
+			SendMessage("Hit", SendMessageOptions.DontRequireReceiver);			
 		}
 		
 	}
