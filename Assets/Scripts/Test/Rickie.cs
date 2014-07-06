@@ -368,6 +368,12 @@ public class Rickie : MonoBehaviour {
 		Transform duder = Instantiate(kickObject, kickPoint.position, kickPoint.rotation) as Transform;
 		duder.parent = punchPoint;
 	}
+	
+	public void AddPower(int value){
+		currentPower = Mathf.Min (currentPower + value, maxPower);
+		GUIHandler.instance.AddPower(value);
+		Debug.Log ("POWER!");
+	}
 }
 
 
