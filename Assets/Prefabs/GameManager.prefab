@@ -39,6 +39,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9cce7c2c5199c348b8db73e120ac2c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  music:
+  - references: {fileID: 11400000}
+    name: Rampage
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 2771fb3e5a1fcf94796d56a7eb54b4e3, type: 3}
+    loop: 1
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 0
+    spread: 0
+    maxDistance: 500
   sFX:
   - references: {fileID: 11400000}
     name: Destruction_Glass_Big
@@ -398,22 +414,6 @@ MonoBehaviour:
     rolloffMode: 1
     minDistance: 0
     panLevel: 1
-    spread: 0
-    maxDistance: 500
-  music:
-  - references: {fileID: 11400000}
-    name: Rampage
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: 2771fb3e5a1fcf94796d56a7eb54b4e3, type: 3}
-    loop: 1
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: 0
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 0
     spread: 0
     maxDistance: 500
 --- !u!1001 &100100000
