@@ -6,13 +6,15 @@ public class GUIHandler : MonoBehaviour {
 	
 	private PowerCell[] cells;
 	public PowerCell protoCell;
+	public GUIText scoreObject;
 	
 	private int cellNumber;
+	public static int score = 0;
 	
 	public static GUIHandler instance;
 	
 	// Use this for initialization
-	
+	private string initScoreString;
 	void Awake () {
 		if(instance == null){
 			instance = this;
@@ -24,6 +26,11 @@ public class GUIHandler : MonoBehaviour {
 		if (!protoCell){
 			Debug.LogWarning("You need to set the protoCell in the inspector!");
 		}
+		if (!scoreObject){
+			Debug.LogWarning("Set the score object in the inspector!");
+		}
+		
+		initScoreString = scoreObject.text;
 		
 		cellNumber = Rickie.maxPower;
 		
@@ -90,5 +97,30 @@ public class GUIHandler : MonoBehaviour {
 			cells[i].Activate ();
 			Debug.Log ("Activating cell" + i);
 		}
+	}
+	
+	public void AddPoints(int value){
+		score += value;
+		string scoreString = score.ToString();
+		string endString = "";
+		for (int i = 0; i < scoreString.Length; i ++){
+			endString += "0";
+		}
+		if (endString == ""){
+			if (scoreString.Length > initScoreString.Length){
+				List<char> newChars = new List<char>();
+				for (int i = 0; i < scoreString.Length; i ++){
+					newChars.Add ('9');
+				}
+				scoreString = new string(newChars.ToArray());
+				score = int.Parse (scoreString);
+				Debug.Log ("Have max points! Here is the points " + score);
+			}
+			
+		} else {
+			scoreString = endString + scoreString;
+		}
+		
+		scoreObject.text = scoreString;
 	}
 }

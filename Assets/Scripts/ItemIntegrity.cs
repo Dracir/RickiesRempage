@@ -17,7 +17,7 @@ public class ItemIntegrity : MonoBehaviour {
 		} else if (hp <= 0) {
 			SendMessage ("Destroyed");
 		} else {
-			SendMessage("Hit");			
+			SendMessage("Hit", SendMessageOptions.DontRequireReceiver);			
 		}
 		
 	}

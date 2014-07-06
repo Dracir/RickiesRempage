@@ -185,6 +185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   protoCell: {fileID: 11400002}
+  scoreObject: {fileID: 13200002}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
