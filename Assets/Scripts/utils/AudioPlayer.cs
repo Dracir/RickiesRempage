@@ -9,7 +9,6 @@ public class AudioPlayer : MonoBehaviour {
 				GO.name = "AudioSource";
 				GO.transform.position = Vector3.zero;
 			}
-		
 		foreach (References.AudioSettings m in References.Music){
 			if (m.name == soundName){
 				m.Play(GO);
