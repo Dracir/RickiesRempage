@@ -1,0 +1,21 @@
+Jump
+
+Punch miss
+Kick miss
+
+Punch hit
+Kick hit
+
+Munch generic
+Munch meat
+Munch bananas
+
+Menu move
+Menu select
+Pause
+
+Wood small break
+Wood medium break
+Wood big break
+
+Metal
