@@ -46,19 +46,21 @@ public class GameObjectCreator {
 			createRoad(new Vector2(roadX + 1f,0));
 			float trimX = x*2 - (1f/2f);
 			createTrim(parent, trim, new Vector2(trimX,0));
-			createTrim(parent, trim, new Vector2(trimX,buildingHeight*2 - 0.5f));
+			createTrim(parent, trim, new Vector2(trimX,buildingHeight*2 - 0.1f));
 			createTrim(parent, trim, new Vector2(trimX+1,0));
-			createTrim(parent, trim, new Vector2(trimX+1,buildingHeight*2 - 0.5f));
+			createTrim(parent, trim, new Vector2(trimX+1,buildingHeight*2 - 0.1f));
 		}
 
 		int doorX = Random.Range (0, buildingWidth);
 		createDoor (parent, new Vector2 (doorX, 0), door);
 
 		if (Random.Range (0, 100) < 70) {
-			createGarbage(position + new Vector2(1,-0.2f));
-		}
-		if (Random.Range (0, 100) < 40) {
-			createRecycle(position + new Vector2(2,-0.2f));
+			createGarbage(position + new Vector2(doorX + Random.Range(1.3f,2f),-0.2f));
+			if (Random.Range (0, 100) < 50) {
+				createRecycle(position + new Vector2(doorX + Random.Range(3f,4f),-0.2f));
+			}
+		}else if (Random.Range (0, 100) < 60) {
+			createRecycle(position + new Vector2(doorX + Random.Range(1.3f,2f),-0.2f));
 		}
 		
 		statNbBuilding++;
@@ -85,7 +87,7 @@ public class GameObjectCreator {
 	}
 
 	public void createTrim(Transform parent, Sprite sprite, Vector2 position){
-		Vector2 p = new Vector2 (position.x , position.y - 0.75f);
+		Vector2 p = new Vector2 (position.x , position.y - 0.88f);
 		GameObject trim = createSpriteGameObject(parent, -9, sprite, p, TRIM_COLLIDER_SIZE, true);
 
 		ItemIntegrity itemIntegrity = trim.AddComponent<ItemIntegrity>();
@@ -107,6 +109,8 @@ public class GameObjectCreator {
 		propComp.hitSound = "Destruction_Glass_Small";
 		propComp.shakeStrenght = 0.05f;
 		propComp.setSprites(sprites);
+
+
 	}
 
 	public void createGarbage(Vector2 position){
@@ -132,6 +136,7 @@ public class GameObjectCreator {
 		propComp.hitSound = "Destruction_Glass_Small";
 		propComp.shakeStrenght = 0.1f;
 		propComp.destroyedTranslation = new Vector3 (0,-0.3f,0);
+
 	}
 
 

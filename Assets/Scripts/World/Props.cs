@@ -65,10 +65,9 @@ public class Props : MonoBehaviour {
 		AudioPlayer.Play(this.destructionSound,this.gameObject);
 		Destroy (this.GetComponent<BoxCollider2D> ());
 		startShake (destroyedShake);
-		if (destroyedTranslation != null) {
-			this.transform.Translate(destroyedTranslation);
-		}
+		this.transform.Translate(destroyedTranslation);
 		destroyed = true;
+		SendMessage ("spawm", SendMessageOptions.DontRequireReceiver);
 	}
 
 	void Hit(){
