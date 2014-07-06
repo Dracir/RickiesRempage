@@ -23,6 +23,7 @@ public class Food : MonoBehaviour {
 	private int verticalRays = 4;
 	private int layerMask;
 	
+	private float collectDelay = 0.25f;
 	private bool canCollect = false;
 	
 	// Use this for initialization
@@ -33,7 +34,7 @@ public class Food : MonoBehaviour {
 		t = transform;
 		boxCol = GetComponent<BoxCollider2D>();
 		layerMask = 1 << LayerMask.NameToLayer("NormalCollisions");
-		
+		Invoke ("CanCollect", collectDelay);
 	}
 	// Update is called once per frame
 	void FixedUpdate () {
@@ -89,7 +90,6 @@ public class Food : MonoBehaviour {
 				falling = false;
 				transform.Translate(Vector3.down * (hitInfos[indexUsed].fraction * distance - box.height/2));
 				velocity = new Vector2(0, 0);
-				canCollect = true;
 			}
 			else{
 				grounded = false;
@@ -109,5 +109,9 @@ public class Food : MonoBehaviour {
 			rick.AddPower(powerValue);
 			Destroy (gameObject);
 		}
+	}
+	
+	void CanCollect () {
+		canCollect = true;
 	}
 }

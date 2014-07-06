@@ -77,9 +77,13 @@ public class GUIHandler : MonoBehaviour {
 			}
 		}
 		Debug.Log ("GAME OVER");
+		Application.LoadLevel(Application.loadedLevel);
 	}
 	
 	public void AddPower(int value){
+		if (Rickie.rickie.IsRampaging){
+			return;
+		}
 		int index = 0;
 		for (index = cells.Length - 1; index >= 0; index --){
 			if (cells[index].IsActive){
@@ -100,7 +104,7 @@ public class GUIHandler : MonoBehaviour {
 		score += value;
 		string scoreString = score.ToString();
 		string endString = "";
-		for (int i = 0; i < scoreString.Length; i ++){
+		for (int i = 0; i < initScoreString.Length - scoreString.Length; i ++){
 			endString += "0";
 		}
 		if (endString == ""){

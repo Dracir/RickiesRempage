@@ -44,7 +44,7 @@ public class Rickie : MonoBehaviour {
 		get { return currentPower > 0? currentPower : maxPower; }
 	}
 	
-	private bool IsRampaging {
+	public bool IsRampaging {
 		get{ return currentPower < 0; }
 	}
 	
