@@ -122,5 +122,6 @@ public class GUIHandler : MonoBehaviour {
 		}
 		
 		scoreObject.text = scoreString;
+		scoreObject.SendMessage("Pop");
 	}
 }

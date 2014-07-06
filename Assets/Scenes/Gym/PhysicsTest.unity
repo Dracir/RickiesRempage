@@ -806,6 +806,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1118223906}
   - 132: {fileID: 1118223907}
+  - 114: {fileID: 1118223908}
   m_Layer: 0
   m_Name: Number
   m_TagString: Untagged
@@ -849,6 +850,17 @@ GUIText:
     rgba: 4286557033
   m_PixelCorrect: 1
   m_RichText: 1
+--- !u!114 &1118223908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1118223905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89f3251643319af49aa006659c271c3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1195671535
 Prefab:
   m_ObjectHideFlags: 0

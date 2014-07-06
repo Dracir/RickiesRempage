@@ -3,8 +3,6 @@ using System.Collections;
 
 public class Food : MonoBehaviour {
 	
-	
-	
 	public int powerValue = 15;
 	
 	private float gravity = 8f;
@@ -23,7 +21,10 @@ public class Food : MonoBehaviour {
 	private Transform t;
 	private BoxCollider2D boxCol;
 	private int verticalRays = 4;
-	int layerMask;
+	private int layerMask;
+	
+	private bool canCollect = false;
+	
 	// Use this for initialization
 	void Start () {
 		velocity = Random.insideUnitCircle * speed;
@@ -88,6 +89,7 @@ public class Food : MonoBehaviour {
 				falling = false;
 				transform.Translate(Vector3.down * (hitInfos[indexUsed].fraction * distance - box.height/2));
 				velocity = new Vector2(0, 0);
+				canCollect = true;
 			}
 			else{
 				grounded = false;
@@ -98,6 +100,9 @@ public class Food : MonoBehaviour {
 	}
 	
 	void OnTriggerEnter2D (Collider2D other){
+		if (!canCollect){
+			return;
+		}
 		Rickie rick = other.GetComponent<Rickie>();
 		
 		if (rick){
