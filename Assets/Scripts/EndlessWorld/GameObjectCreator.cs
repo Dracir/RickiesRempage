@@ -106,9 +106,11 @@ public class GameObjectCreator {
 		propComp.destructionSound = "Destruction_Glass_Big";
 		propComp.halfLifeShake = 0.3f;
 		propComp.hitShake = 0.1f;
-		propComp.hitSound = "Destruction_Glass_Small";
+		propComp.hitSound = "Hit_Metal_Medium";
 		propComp.shakeStrenght = 0.05f;
 		propComp.setSprites(sprites);
+		propComp.pointsForDestroyed = 78;
+		propComp.pointsForHited = 10;
 
 		FoodSpawner fs = prop.AddComponent<FoodSpawner>();
 		fs.minFood = 2;
@@ -135,9 +137,11 @@ public class GameObjectCreator {
 		propComp.destructionSound = "Destruction_Glass_Big";
 		propComp.halfLifeShake = 0.4f;
 		propComp.hitShake = 0.15f;
-		propComp.hitSound = "Destruction_Glass_Small";
+		propComp.hitSound = "Hit_Metal_Medium";
 		propComp.shakeStrenght = 0.1f;
 		propComp.destroyedTranslation = new Vector3 (0,-0.3f,0);
+		propComp.pointsForDestroyed = 54;
+		propComp.pointsForHited = 5;
 
 		FoodSpawner fs = prop.AddComponent<FoodSpawner>();
 		fs.minFood = 0;
