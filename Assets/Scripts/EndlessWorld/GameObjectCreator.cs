@@ -110,7 +110,9 @@ public class GameObjectCreator {
 		propComp.shakeStrenght = 0.05f;
 		propComp.setSprites(sprites);
 
-
+		FoodSpawner fs = prop.AddComponent<FoodSpawner>();
+		fs.minFood = 2;
+		fs.minFood = 3;
 	}
 
 	public void createGarbage(Vector2 position){
@@ -137,6 +139,9 @@ public class GameObjectCreator {
 		propComp.shakeStrenght = 0.1f;
 		propComp.destroyedTranslation = new Vector3 (0,-0.3f,0);
 
+		FoodSpawner fs = prop.AddComponent<FoodSpawner>();
+		fs.minFood = 0;
+		fs.minFood = 1;
 	}
 
 

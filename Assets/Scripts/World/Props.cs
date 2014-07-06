@@ -67,7 +67,7 @@ public class Props : MonoBehaviour {
 		startShake (destroyedShake);
 		this.transform.Translate(destroyedTranslation);
 		destroyed = true;
-		SendMessage ("spawm", SendMessageOptions.DontRequireReceiver);
+		SendMessage ("SpawnFood", SendMessageOptions.DontRequireReceiver);
 	}
 
 	void Hit(){
