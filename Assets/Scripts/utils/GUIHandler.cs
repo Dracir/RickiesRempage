@@ -77,6 +77,7 @@ public class GUIHandler : MonoBehaviour {
 			}
 		}
 		Debug.Log ("GAME OVER");
+		AudioPlayer.Play ("YouLose-01", Rickie.rickie.gameObject);
 		Application.LoadLevel(Application.loadedLevel);
 	}
 	

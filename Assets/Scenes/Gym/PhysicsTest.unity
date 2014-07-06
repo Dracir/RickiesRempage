@@ -78,7 +78,7 @@ NavMeshSettings:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: cf94edb7b84e81548bf2e1d5b0dd6404, type: 2}
-  m_PrefabInternal: {fileID: 1623607793}
+  m_PrefabInternal: {fileID: 2137107061}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 89299562}
@@ -94,7 +94,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400000, guid: cf94edb7b84e81548bf2e1d5b0dd6404, type: 2}
-  m_PrefabInternal: {fileID: 1623607793}
+  m_PrefabInternal: {fileID: 2137107061}
   m_GameObject: {fileID: 89299561}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .0299999993, y: .970000029, z: 0}
@@ -107,7 +107,7 @@ GUIText:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13200000, guid: cf94edb7b84e81548bf2e1d5b0dd6404,
     type: 2}
-  m_PrefabInternal: {fileID: 1623607793}
+  m_PrefabInternal: {fileID: 2137107061}
   m_GameObject: {fileID: 89299561}
   m_Enabled: 1
   serializedVersion: 3
@@ -330,7 +330,7 @@ Prefab:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100002, guid: cf94edb7b84e81548bf2e1d5b0dd6404, type: 2}
-  m_PrefabInternal: {fileID: 1623607793}
+  m_PrefabInternal: {fileID: 2137107061}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 385268835}
@@ -346,7 +346,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400002, guid: cf94edb7b84e81548bf2e1d5b0dd6404, type: 2}
-  m_PrefabInternal: {fileID: 1623607793}
+  m_PrefabInternal: {fileID: 2137107061}
   m_GameObject: {fileID: 385268834}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -363,7 +363,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400000, guid: cf94edb7b84e81548bf2e1d5b0dd6404,
     type: 2}
-  m_PrefabInternal: {fileID: 1623607793}
+  m_PrefabInternal: {fileID: 2137107061}
   m_GameObject: {fileID: 385268834}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -458,7 +458,7 @@ Transform:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100004, guid: cf94edb7b84e81548bf2e1d5b0dd6404, type: 2}
-  m_PrefabInternal: {fileID: 1623607793}
+  m_PrefabInternal: {fileID: 2137107061}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 600472626}
@@ -475,7 +475,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400004, guid: cf94edb7b84e81548bf2e1d5b0dd6404, type: 2}
-  m_PrefabInternal: {fileID: 1623607793}
+  m_PrefabInternal: {fileID: 2137107061}
   m_GameObject: {fileID: 600472625}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .0299999993, y: .889999986, z: 0}
@@ -488,7 +488,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400002, guid: cf94edb7b84e81548bf2e1d5b0dd6404,
     type: 2}
-  m_PrefabInternal: {fileID: 1623607793}
+  m_PrefabInternal: {fileID: 2137107061}
   m_GameObject: {fileID: 600472625}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -503,7 +503,7 @@ GUITexture:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13100000, guid: cf94edb7b84e81548bf2e1d5b0dd6404,
     type: 2}
-  m_PrefabInternal: {fileID: 1623607793}
+  m_PrefabInternal: {fileID: 2137107061}
   m_GameObject: {fileID: 600472625}
   m_Enabled: 1
   m_Texture: {fileID: 2800000, guid: 79d14bd1cba19844cbc644f03f054fb3, type: 3}
@@ -563,7 +563,7 @@ Transform:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100006, guid: cf94edb7b84e81548bf2e1d5b0dd6404, type: 2}
-  m_PrefabInternal: {fileID: 1623607793}
+  m_PrefabInternal: {fileID: 2137107061}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 705394800}
@@ -578,7 +578,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400006, guid: cf94edb7b84e81548bf2e1d5b0dd6404, type: 2}
-  m_PrefabInternal: {fileID: 1623607793}
+  m_PrefabInternal: {fileID: 2137107061}
   m_GameObject: {fileID: 705394798}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -587,6 +587,423 @@ Transform:
   - {fileID: 600472626}
   m_Father: {fileID: 385268835}
   m_RootOrder: 3
+--- !u!1 &761564771
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+  m_PrefabInternal: {fileID: 1160857817}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 761564773}
+  - 114: {fileID: 761564772}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &761564772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb,
+    type: 2}
+  m_PrefabInternal: {fileID: 1160857817}
+  m_GameObject: {fileID: 761564771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9cce7c2c5199c348b8db73e120ac2c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  music:
+  - references: {fileID: 761564772}
+    name: Rampage
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 2771fb3e5a1fcf94796d56a7eb54b4e3, type: 3}
+    loop: 1
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 0
+    spread: 0
+    maxDistance: 500
+  sFX:
+  - references: {fileID: 761564772}
+    name: Destruction_Glass_Big
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: b15a59fc1b806924aa2702dc6f7acef5, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: .25
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 761564772}
+    name: Destruction_Glass_Medium
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 92cb38cb4d44ec44787f459ee29ffc57, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: .25
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 761564772}
+    name: Destruction_Glass_Small
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: cede6a8775d371043866a87d92aeb993, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: .25
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 761564772}
+    name: Menu_Pause-01
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: b7e46170b2906c4489bba6e07a4261fa, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 761564772}
+    name: Menu_Pause-02
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 65c551484ffcca949bcfd9a8702673d6, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 761564772}
+    name: Menu_Pause-03
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: bfa7bf7680840d74dbb15413f18f9404, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 761564772}
+    name: Menu_Play-01
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 4450fa7495a30a443aba2606d7e5256f, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 761564772}
+    name: Menu_Play-02
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 53fe140580876c74089497d57d468736, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 761564772}
+    name: Menu_Play-03
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 64547877670588549955e67e7134e819, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 761564772}
+    name: Voice_Rampage-01
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 6094d9e31cefd2b47afe64f0b4139809, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 761564772}
+    name: Voice_Rampage-02
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 65b0307f6f71b3147b1f6c571948a780, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 761564772}
+    name: Voice_Rampage-03
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 996353994acea6b41ad0ed740bc8f7e6, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 761564772}
+    name: Voice_RickysRampage_v1-01
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: ba5342cfee5efdf4092b351ebfaf216b, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 761564772}
+    name: Voice_RickysRampage_v1-02
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: ed2bb08d726dd7d4393b9dbb49495896, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 761564772}
+    name: Voice_RickysRampage_v1-03
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 6b5e0638f884eba4682b5670b040a6da, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 761564772}
+    name: Voice_RickysRampage_v2-01
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 89efde130347b9d419cf527ad0c953c9, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 761564772}
+    name: Voice_RickysRampage_v2-02
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: ebd93f15f2212684391f4513e0d77e51, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 761564772}
+    name: Voice_RickysRampage_v2-03
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: c933aea6efa9ff4408e998123144c3ef, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 761564772}
+    name: Voice_RickysRampage_v3-01
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 3e88aa61895188943bdf22262a5552fb, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 761564772}
+    name: Voice_RickysRampage_v3-02
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: ff4963b699b9f2845a04041249de4f33, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 761564772}
+    name: Voice_RickysRampage_v3-03
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 94c7e5d37220f834f8bbe03ec01b75c2, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 761564772}
+    name: YouLose-01
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 18676519c2880144d876fb455e423ee1, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 761564772}
+    name: YouLose-02
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: ad12c9f9d3291df45999d329db06f698, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 761564772}
+    name: YouLose-03
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 816cfb8a094eeb5408f5bd65fdbc7dd2, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+--- !u!4 &761564773
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+  m_PrefabInternal: {fileID: 1160857817}
+  m_GameObject: {fileID: 761564771}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
 --- !u!1 &854060126
 GameObject:
   m_ObjectHideFlags: 0
@@ -803,7 +1220,7 @@ MonoBehaviour:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100008, guid: cf94edb7b84e81548bf2e1d5b0dd6404, type: 2}
-  m_PrefabInternal: {fileID: 1623607793}
+  m_PrefabInternal: {fileID: 2137107061}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1118223906}
@@ -820,7 +1237,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400008, guid: cf94edb7b84e81548bf2e1d5b0dd6404, type: 2}
-  m_PrefabInternal: {fileID: 1623607793}
+  m_PrefabInternal: {fileID: 2137107061}
   m_GameObject: {fileID: 1118223905}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .899999976, y: .970000029, z: 0}
@@ -833,7 +1250,7 @@ GUIText:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13200002, guid: cf94edb7b84e81548bf2e1d5b0dd6404,
     type: 2}
-  m_PrefabInternal: {fileID: 1623607793}
+  m_PrefabInternal: {fileID: 2137107061}
   m_GameObject: {fileID: 1118223905}
   m_Enabled: 1
   serializedVersion: 3
@@ -855,14 +1272,63 @@ GUIText:
 --- !u!114 &1118223908
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 11400004, guid: cf94edb7b84e81548bf2e1d5b0dd6404,
+    type: 2}
+  m_PrefabInternal: {fileID: 2137107061}
   m_GameObject: {fileID: 1118223905}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 89f3251643319af49aa006659c271c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1160857817
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: m_RootMapOrder
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+  m_RootGameObject: {fileID: 761564771}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1001 &1195671535
 Prefab:
   m_ObjectHideFlags: 0
@@ -1277,7 +1743,7 @@ Transform:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100010, guid: cf94edb7b84e81548bf2e1d5b0dd6404, type: 2}
-  m_PrefabInternal: {fileID: 1623607793}
+  m_PrefabInternal: {fileID: 2137107061}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1608784103}
@@ -1294,7 +1760,7 @@ GUIText:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13200004, guid: cf94edb7b84e81548bf2e1d5b0dd6404,
     type: 2}
-  m_PrefabInternal: {fileID: 1623607793}
+  m_PrefabInternal: {fileID: 2137107061}
   m_GameObject: {fileID: 1608784101}
   m_Enabled: 1
   serializedVersion: 3
@@ -1317,7 +1783,7 @@ GUIText:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400010, guid: cf94edb7b84e81548bf2e1d5b0dd6404, type: 2}
-  m_PrefabInternal: {fileID: 1623607793}
+  m_PrefabInternal: {fileID: 2137107061}
   m_GameObject: {fileID: 1608784101}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .899999976, y: .970000029, z: 0}
@@ -1325,54 +1791,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 385268835}
   m_RootOrder: 2
---- !u!1001 &1623607793
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 400002, guid: cf94edb7b84e81548bf2e1d5b0dd6404, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: cf94edb7b84e81548bf2e1d5b0dd6404, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: cf94edb7b84e81548bf2e1d5b0dd6404, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: cf94edb7b84e81548bf2e1d5b0dd6404, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: cf94edb7b84e81548bf2e1d5b0dd6404, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: cf94edb7b84e81548bf2e1d5b0dd6404, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: cf94edb7b84e81548bf2e1d5b0dd6404, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: cf94edb7b84e81548bf2e1d5b0dd6404, type: 2}
-      propertyPath: m_RootMapOrder
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: cf94edb7b84e81548bf2e1d5b0dd6404, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: cf94edb7b84e81548bf2e1d5b0dd6404, type: 2}
-  m_RootGameObject: {fileID: 385268834}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
 --- !u!1 &1765081432
 GameObject:
   m_ObjectHideFlags: 0
@@ -1861,5 +2279,53 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 687d19d6f2ecc364cbd4018652f0125e, type: 2}
   m_RootGameObject: {fileID: 1765081432}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
+--- !u!1001 &2137107061
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400002, guid: cf94edb7b84e81548bf2e1d5b0dd6404, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: cf94edb7b84e81548bf2e1d5b0dd6404, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: cf94edb7b84e81548bf2e1d5b0dd6404, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: cf94edb7b84e81548bf2e1d5b0dd6404, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: cf94edb7b84e81548bf2e1d5b0dd6404, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: cf94edb7b84e81548bf2e1d5b0dd6404, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: cf94edb7b84e81548bf2e1d5b0dd6404, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: cf94edb7b84e81548bf2e1d5b0dd6404, type: 2}
+      propertyPath: m_RootMapOrder
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: cf94edb7b84e81548bf2e1d5b0dd6404, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: cf94edb7b84e81548bf2e1d5b0dd6404, type: 2}
+  m_RootGameObject: {fileID: 385268834}
   m_IsPrefabParent: 0
   m_IsExploded: 1
