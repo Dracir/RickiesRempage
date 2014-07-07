@@ -47,6 +47,7 @@ public class Rickie : MonoBehaviour {
 	}
 	
 	public const int maxPower = 30;
+	public const int startPower = 5;
 	private int currentPower;
 	public int ExtraDamage {
 		get { return currentPower > 0? currentPower : maxPower; }

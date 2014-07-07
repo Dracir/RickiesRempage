@@ -51,6 +51,9 @@ public class GUIHandler : MonoBehaviour {
 		}
 		
 		cells = cellList.ToArray();
+		for (int i = 0; i < Rickie.startPower; i ++){
+			cells[i].Activate();
+		}
 	}
 	int loseDelay = 120;
 	int loseCounter = 0;

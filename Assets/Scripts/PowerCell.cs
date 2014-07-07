@@ -11,12 +11,18 @@ public class PowerCell : MonoBehaviour {
 	float shrinkTimer = 0;
 	Vector3 initScale;
 	GUITexture tex;
+	GUITexture Tex{
+		get{
+			if (!tex){
+				tex = GetComponent<GUITexture>();
+			}
+			return tex;
+		}
+	}
 	
 	// Use this for initialization
 	void Start () {
-		tex = GetComponent<GUITexture>();
 		initScale = transform.localScale;
-		Activate ();
 	}
 	
 	// Update is called once per frame
@@ -32,16 +38,18 @@ public class PowerCell : MonoBehaviour {
 	}
 	
 	public void Activate (){
-		tex.texture = activeTexture;
-		Pop ();
+		Tex.texture = activeTexture;
+		if (initScale != Vector3.zero){
+			Pop ();
+		}
 	}
 	
 	public void Deactivate (){
-		tex.texture = inactiveTexture;
+		Tex.texture = inactiveTexture;
 	}
 	
 	public void Poof () {
-		tex.texture = null;
+		Tex.texture = null;
 	}
 	
 	public void Pop () {
@@ -55,13 +63,13 @@ public class PowerCell : MonoBehaviour {
 	
 	public bool IsActive {
 		get {
-			return tex.texture == activeTexture;
+			return Tex.texture == activeTexture;
 		}
 	}
 	
 	public bool HasTexture {
 		get{
-			return tex.texture != null;
+			return Tex.texture != null;
 		}
 	}
 }
