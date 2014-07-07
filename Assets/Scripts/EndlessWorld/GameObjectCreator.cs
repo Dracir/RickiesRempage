@@ -28,6 +28,7 @@ public class GameObjectCreator {
 
 	public void createNewWorld(){
 		world = GameObjectFactory.createGameObject ("World");
+		world.AddComponent<World> ();
 		buildings = GameObjectFactory.createGameObject ("Buildings",world.transform);
 		roads = GameObjectFactory.createGameObject ("Roads",world.transform);
 		props = GameObjectFactory.createGameObject ("Props",world.transform);
@@ -36,6 +37,7 @@ public class GameObjectCreator {
 
 	public void createBuilding(Vector2 position, Sprite wallSprite, Sprite trim, Sprite[] door, int buildingWidth, int buildingHeight){
 		GameObject newBuilding = GameObjectFactory.createGameObject ("Building " + statNbBuilding, buildings.transform);
+		newBuilding.AddComponent<RemovedByInvisibleWall> ();
 		Transform parent = newBuilding.transform;
 		for (int x = 0; x < buildingWidth; x++) {
 			for (int y = 0; y < buildingHeight; y++) {
@@ -71,11 +73,13 @@ public class GameObjectCreator {
 	public void createRoad(Vector2 position){
 		Sprite roadSprite = roadSprites [Random.Range (0, roadSprites.Length-1)];
 		Vector2 p = new Vector2 (position.x , position.y - 3f);
-		createSpriteGameObject (roads.transform, -20, roadSprite, p, ROAD_COLLIDER_SIZE, false);
+		GameObject o = createSpriteGameObject (roads.transform, -20, roadSprite, p, ROAD_COLLIDER_SIZE, false);
+		o.AddComponent<RemovedByInvisibleWall> ();
 	}
 	public void createRoad(Vector2 position, Sprite sprite){
 		Vector2 p = new Vector2 (position.x , position.y - 3f);
-		createSpriteGameObject (roads.transform, -20, sprite, p, ROAD_COLLIDER_SIZE, false);
+		GameObject o = createSpriteGameObject (roads.transform, -20, sprite, p, ROAD_COLLIDER_SIZE, false);
+		o.AddComponent<RemovedByInvisibleWall> ();
 	}
 
 	public void createBuildingPart(Transform parent, Sprite sprite, Vector2 position){
@@ -137,7 +141,7 @@ public class GameObjectCreator {
 		propComp.destructionSound = "Destruction_Glass_Big";
 		propComp.halfLifeShake = 0.4f;
 		propComp.hitShake = 0.15f;
-		propComp.hitSound = "Hit_Metal_Medium";
+		propComp.hitSound = "Destruction_Rock_Medium";
 		propComp.shakeStrenght = 0.1f;
 		propComp.destroyedTranslation = new Vector3 (0,-0.3f,0);
 		propComp.pointsForDestroyed = 54;
@@ -146,6 +150,8 @@ public class GameObjectCreator {
 		FoodSpawner fs = prop.AddComponent<FoodSpawner>();
 		fs.minFood = 0;
 		fs.minFood = 1;
+
+		prop.AddComponent<RemovedByInvisibleWall> ();
 	}
 
 

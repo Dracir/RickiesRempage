@@ -9,7 +9,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 114: {fileID: 11400000}
-  - 114: {fileID: 11400002}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -28,7 +27,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootMapOrder: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -155,7 +154,7 @@ MonoBehaviour:
     priority: 128
     volume: 1
     pitch: 1
-    randomPitch: .25
+    randomPitch: 0
     dopplerLevel: 0
     rolloffMode: 1
     minDistance: 0
@@ -170,7 +169,7 @@ MonoBehaviour:
     priority: 128
     volume: 1
     pitch: 1
-    randomPitch: .25
+    randomPitch: 0
     dopplerLevel: 0
     rolloffMode: 1
     minDistance: 0
@@ -185,7 +184,7 @@ MonoBehaviour:
     priority: 128
     volume: 1
     pitch: 1
-    randomPitch: .25
+    randomPitch: 0
     dopplerLevel: 0
     rolloffMode: 1
     minDistance: 0
@@ -200,7 +199,7 @@ MonoBehaviour:
     priority: 128
     volume: 1
     pitch: 1
-    randomPitch: .25
+    randomPitch: 0
     dopplerLevel: 0
     rolloffMode: 1
     minDistance: 0
@@ -215,7 +214,7 @@ MonoBehaviour:
     priority: 128
     volume: 1
     pitch: 1
-    randomPitch: .25
+    randomPitch: 0
     dopplerLevel: 0
     rolloffMode: 1
     minDistance: 0
@@ -230,7 +229,7 @@ MonoBehaviour:
     priority: 128
     volume: 1
     pitch: 1
-    randomPitch: .25
+    randomPitch: 0
     dopplerLevel: 0
     rolloffMode: 1
     minDistance: 0
@@ -245,7 +244,7 @@ MonoBehaviour:
     priority: 128
     volume: 1
     pitch: 1
-    randomPitch: .25
+    randomPitch: 0
     dopplerLevel: 0
     rolloffMode: 1
     minDistance: 0
@@ -258,9 +257,9 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 43ebfe78e15a96541af751f131da3d9b, type: 3}
     loop: 0
     priority: 128
-    volume: 1
+    volume: .699999988
     pitch: 1
-    randomPitch: .25
+    randomPitch: 0
     dopplerLevel: 0
     rolloffMode: 1
     minDistance: 0
@@ -273,9 +272,9 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 7f8a8ff9bea3bec4ebc97e04b2fa4ceb, type: 3}
     loop: 0
     priority: 128
-    volume: 1
+    volume: .699999988
     pitch: 1
-    randomPitch: .25
+    randomPitch: 0
     dopplerLevel: 0
     rolloffMode: 1
     minDistance: 0
@@ -288,9 +287,9 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 277a8b19bc61187409f10bbbad84280b, type: 3}
     loop: 0
     priority: 128
-    volume: 1
+    volume: .699999988
     pitch: 1
-    randomPitch: .25
+    randomPitch: 0
     dopplerLevel: 0
     rolloffMode: 1
     minDistance: 0
@@ -642,17 +641,96 @@ MonoBehaviour:
     panLevel: 1
     spread: 0
     maxDistance: 500
---- !u!114 &11400002
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7abfd421055ed647accc168d5274d27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  - references: {fileID: 11400000}
+    name: Character_Munch
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 61eda28465afd2f46bcd4f6e8e378ef2, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: .5
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 11400000}
+    name: Hit_Plastic_Big
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 4f70685047171724597550840b03399f, type: 3}
+    loop: 0
+    priority: 128
+    volume: .800000012
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 11400000}
+    name: Hit_Plastic_Medium
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: e49675e333bdc1b4fabda5178ac281ae, type: 3}
+    loop: 0
+    priority: 128
+    volume: .800000012
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 11400000}
+    name: Hit_Plastic_Small
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: d167f2b56a5a0c64c9da3a7ed745cc70, type: 3}
+    loop: 0
+    priority: 128
+    volume: .800000012
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 11400000}
+    name: Food_Drop_Regular
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 4b447477f793ad543818913921c697bb, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: .5
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 11400000}
+    name: Food_Drop_Banana
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 31e5337667cb72640bb53baf767ee84b, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -661,6 +739,9 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications: []
     m_RemovedComponents: []
+    m_DeprecatedTransformRoot: {fileID: 0}
+    m_DeprecatedTransformMap: {}
+    m_DeprecatedTransformComplete: 1
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100000}
   m_IsPrefabParent: 1
