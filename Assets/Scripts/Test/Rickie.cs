@@ -135,6 +135,7 @@ public class Rickie : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
+	
 	void FixedUpdate () {
 		//this line of code will save us a lot of typing
 		box = new Rect(
@@ -379,6 +380,9 @@ public class Rickie : MonoBehaviour {
 	}
 	
 	public void AddPower(int value){
+		if (IsRampaging){
+			return;
+		}
 		currentPower = Mathf.Min (currentPower + value, maxPower);
 		GUIHandler.instance.AddPower(value);
 		
