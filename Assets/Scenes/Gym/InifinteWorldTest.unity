@@ -504,6 +504,59 @@ Prefab:
   m_RootGameObject: {fileID: 2076042104}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &653312623
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: b316c40b82cf859439988d1cb9f685bf, type: 2}
+  m_PrefabInternal: {fileID: 1275957386}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 653312626}
+  - 114: {fileID: 653312625}
+  - 114: {fileID: 653312624}
+  m_Layer: 0
+  m_Name: Richard's Game Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &653312624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: b316c40b82cf859439988d1cb9f685bf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1275957386}
+  m_GameObject: {fileID: 653312623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7abfd421055ed647accc168d5274d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &653312625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: b316c40b82cf859439988d1cb9f685bf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1275957386}
+  m_GameObject: {fileID: 653312623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b3403b39c8bbd4caf5f547575de730, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &653312626
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: b316c40b82cf859439988d1cb9f685bf, type: 2}
+  m_PrefabInternal: {fileID: 1275957386}
+  m_GameObject: {fileID: 653312623}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -30.6582985, y: 10.5874319, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
 --- !u!1 &761253255
 GameObject:
   m_ObjectHideFlags: 0
@@ -701,6 +754,54 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toFollow: {fileID: 148601434}
   followInYAxis: 0
+--- !u!1001 &1275957386
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: b316c40b82cf859439988d1cb9f685bf, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -30.6582985
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b316c40b82cf859439988d1cb9f685bf, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 10.5874319
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b316c40b82cf859439988d1cb9f685bf, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b316c40b82cf859439988d1cb9f685bf, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b316c40b82cf859439988d1cb9f685bf, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b316c40b82cf859439988d1cb9f685bf, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b316c40b82cf859439988d1cb9f685bf, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b316c40b82cf859439988d1cb9f685bf, type: 2}
+      propertyPath: m_RootMapOrder
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b316c40b82cf859439988d1cb9f685bf, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: b316c40b82cf859439988d1cb9f685bf, type: 2}
+  m_RootGameObject: {fileID: 653312623}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1293630306
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,8 +811,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1293630310}
   - 114: {fileID: 1293630309}
-  - 114: {fileID: 1293630308}
-  - 114: {fileID: 1293630307}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -719,30 +818,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1293630307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400004, guid: 5a896c9518bf6484180e961ce06bb0fb,
-    type: 2}
-  m_PrefabInternal: {fileID: 1560474479}
-  m_GameObject: {fileID: 1293630306}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b3403b39c8bbd4caf5f547575de730, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1293630308
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: 5a896c9518bf6484180e961ce06bb0fb,
-    type: 2}
-  m_PrefabInternal: {fileID: 1560474479}
-  m_GameObject: {fileID: 1293630306}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7abfd421055ed647accc168d5274d27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1293630309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -870,7 +945,7 @@ MonoBehaviour:
     priority: 128
     volume: 1
     pitch: 1
-    randomPitch: .25
+    randomPitch: 0
     dopplerLevel: 0
     rolloffMode: 1
     minDistance: 0
@@ -885,7 +960,7 @@ MonoBehaviour:
     priority: 128
     volume: 1
     pitch: 1
-    randomPitch: .25
+    randomPitch: 0
     dopplerLevel: 0
     rolloffMode: 1
     minDistance: 0
@@ -900,7 +975,7 @@ MonoBehaviour:
     priority: 128
     volume: 1
     pitch: 1
-    randomPitch: .25
+    randomPitch: 0
     dopplerLevel: 0
     rolloffMode: 1
     minDistance: 0
@@ -915,7 +990,7 @@ MonoBehaviour:
     priority: 128
     volume: 1
     pitch: 1
-    randomPitch: .25
+    randomPitch: 0
     dopplerLevel: 0
     rolloffMode: 1
     minDistance: 0
@@ -930,7 +1005,7 @@ MonoBehaviour:
     priority: 128
     volume: 1
     pitch: 1
-    randomPitch: .25
+    randomPitch: 0
     dopplerLevel: 0
     rolloffMode: 1
     minDistance: 0
@@ -945,7 +1020,7 @@ MonoBehaviour:
     priority: 128
     volume: 1
     pitch: 1
-    randomPitch: .25
+    randomPitch: 0
     dopplerLevel: 0
     rolloffMode: 1
     minDistance: 0
@@ -960,7 +1035,7 @@ MonoBehaviour:
     priority: 128
     volume: 1
     pitch: 1
-    randomPitch: .25
+    randomPitch: 0
     dopplerLevel: 0
     rolloffMode: 1
     minDistance: 0
@@ -973,9 +1048,9 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 43ebfe78e15a96541af751f131da3d9b, type: 3}
     loop: 0
     priority: 128
-    volume: 1
+    volume: .699999988
     pitch: 1
-    randomPitch: .25
+    randomPitch: 0
     dopplerLevel: 0
     rolloffMode: 1
     minDistance: 0
@@ -988,9 +1063,9 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 7f8a8ff9bea3bec4ebc97e04b2fa4ceb, type: 3}
     loop: 0
     priority: 128
-    volume: 1
+    volume: .699999988
     pitch: 1
-    randomPitch: .25
+    randomPitch: 0
     dopplerLevel: 0
     rolloffMode: 1
     minDistance: 0
@@ -1003,9 +1078,9 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 277a8b19bc61187409f10bbbad84280b, type: 3}
     loop: 0
     priority: 128
-    volume: 1
+    volume: .699999988
     pitch: 1
-    randomPitch: .25
+    randomPitch: 0
     dopplerLevel: 0
     rolloffMode: 1
     minDistance: 0
@@ -1346,6 +1421,96 @@ MonoBehaviour:
     name: YouLose-03
     audioSource: {fileID: 0}
     clip: {fileID: 8300000, guid: 816cfb8a094eeb5408f5bd65fdbc7dd2, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1293630309}
+    name: Character_Munch
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 61eda28465afd2f46bcd4f6e8e378ef2, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: .5
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1293630309}
+    name: Hit_Plastic_Big
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 4f70685047171724597550840b03399f, type: 3}
+    loop: 0
+    priority: 128
+    volume: .800000012
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1293630309}
+    name: Hit_Plastic_Medium
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: e49675e333bdc1b4fabda5178ac281ae, type: 3}
+    loop: 0
+    priority: 128
+    volume: .800000012
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1293630309}
+    name: Hit_Plastic_Small
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: d167f2b56a5a0c64c9da3a7ed745cc70, type: 3}
+    loop: 0
+    priority: 128
+    volume: .800000012
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1293630309}
+    name: Food_Drop_Regular
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 4b447477f793ad543818913921c697bb, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: .5
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1293630309}
+    name: Food_Drop_Banana
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 31e5337667cb72640bb53baf767ee84b, type: 3}
     loop: 0
     priority: 128
     volume: 1
