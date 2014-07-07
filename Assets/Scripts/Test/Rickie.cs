@@ -21,6 +21,14 @@ public class Rickie : MonoBehaviour {
 	}
 	private Directions facing = Directions.centre;
 	
+	private class SoundNames {
+		public string punch = "Character_Swoosh_Punch";
+		public string kick = "Character_Swoosh_Kick";
+		public string jump = "Character_Jump";
+	}
+	private SoundNames sounds = new SoundNames();
+	
+	
 	public Transform kickPoint;
 	public Transform punchPoint;
 	public Transform kickObject;
@@ -121,13 +129,13 @@ public class Rickie : MonoBehaviour {
 		layerMask = 1 << LayerMask.NameToLayer("NormalCollisions");
 		boxCol = GetComponent<BoxCollider2D>();
 		t = transform;
-		
 		currentPower = maxPower;
 		anim = GetComponent<Animator>();
 		anim.Play ("Stand");
 	}
 	
 	// Update is called once per frame
+	
 	void FixedUpdate () {
 		//this line of code will save us a lot of typing
 		box = new Rect(
@@ -202,6 +210,7 @@ public class Rickie : MonoBehaviour {
 			Transform duder = Instantiate(punchObject, punchPoint.position, punchPoint.rotation) as Transform;
 			duder.parent = punchPoint;
 			anim.Play ("Punch");
+			AudioPlayer.Play (sounds.punch, gameObject);
 		}
 		
 		if (Kicking){
@@ -339,6 +348,7 @@ public class Rickie : MonoBehaviour {
 				velocity = new Vector2(velocity.x, jump);
 				lastJumpDownTime = 0;
 				grounded = false;
+				AudioPlayer.Play (sounds.jump, gameObject);
 			}
 			
 		    jumpPressedLastFrame = input;
@@ -366,11 +376,16 @@ public class Rickie : MonoBehaviour {
 	void SpawnKick () {
 		Transform duder = Instantiate(kickObject, kickPoint.position, kickPoint.rotation) as Transform;
 		duder.parent = punchPoint;
+		AudioPlayer.Play (sounds.kick, gameObject);
 	}
 	
 	public void AddPower(int value){
+		if (IsRampaging){
+			return;
+		}
 		currentPower = Mathf.Min (currentPower + value, maxPower);
 		GUIHandler.instance.AddPower(value);
+		
 	}
 }
 

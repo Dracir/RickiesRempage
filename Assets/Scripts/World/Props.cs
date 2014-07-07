@@ -76,10 +76,9 @@ public class Props : MonoBehaviour {
 	void Hit(){
 		if (!halfLifed) {
 			sr.sprite = sprites [1];
-		} else {
-			AudioPlayer.Play(this.hitSound,this.gameObject);		
 		}
-
+		AudioPlayer.Play(this.hitSound,this.gameObject);	
+		
 		startShake (hitShake);
 		GUIHandler.instance.AddPoints (this.transform.position, pointsForHited);
 	}

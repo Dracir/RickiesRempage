@@ -6,22 +6,34 @@ public class PowerCell : MonoBehaviour {
 	public Texture activeTexture;
 	public Texture inactiveTexture;
 	public float interval = 0.2f;
-	
+	float growAmount = 1.5f;
+	float shrinkTiming = 0.4f;
+	float shrinkTimer = 0;
+	Vector3 initScale;
 	GUITexture tex;
 	
 	// Use this for initialization
 	void Start () {
 		tex = GetComponent<GUITexture>();
+		initScale = transform.localScale;
 		Activate ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+		if (transform.localScale.magnitude > initScale.magnitude){
+			float lerpAmount = shrinkTimer / shrinkTiming;
+			transform.localScale = Vector3.Lerp (initScale * growAmount, initScale, shrinkTimer / shrinkTiming);
+			shrinkTimer += Time.deltaTime;
+			if (shrinkTimer >= shrinkTiming){
+				transform.localScale = initScale;
+			}
+		}
 	}
 	
 	public void Activate (){
 		tex.texture = activeTexture;
+		Pop ();
 	}
 	
 	public void Deactivate (){
@@ -30,6 +42,11 @@ public class PowerCell : MonoBehaviour {
 	
 	public void Poof () {
 		tex.texture = null;
+	}
+	
+	public void Pop () {
+		transform.localScale = initScale * growAmount;
+		shrinkTimer = 0;
 	}
 	
 	public void MoveOver (int i) {

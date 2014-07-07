@@ -73,6 +73,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400008}
   - 132: {fileID: 13200002}
+  - 114: {fileID: 11400004}
   m_Layer: 0
   m_Name: Number
   m_TagString: Untagged
@@ -186,6 +187,68 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   protoCell: {fileID: 11400002}
   scoreObject: {fileID: 13200002}
+  popupConfiguration:
+    font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    sizeVariation:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 10
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    baseFontSize: 30
+    gradient:
+      key0:
+        serializedVersion: 2
+        rgba: 4294967295
+      key1:
+        serializedVersion: 2
+        rgba: 4286556777
+      key2:
+        serializedVersion: 2
+        rgba: 0
+      key3:
+        serializedVersion: 2
+        rgba: 0
+      key4:
+        serializedVersion: 2
+        rgba: 0
+      key5:
+        serializedVersion: 2
+        rgba: 0
+      key6:
+        serializedVersion: 2
+        rgba: 0
+      key7:
+        serializedVersion: 2
+        rgba: 0
+      ctime0: 0
+      ctime1: 65535
+      ctime2: 0
+      ctime3: 0
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+    lifetime: 1
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -200,6 +263,17 @@ MonoBehaviour:
   activeTexture: {fileID: 2800000, guid: 9e0a2981a7f453d4ca1896b39e83caae, type: 3}
   inactiveTexture: {fileID: 2800000, guid: 79d14bd1cba19844cbc644f03f054fb3, type: 3}
   interval: .00999999978
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89f3251643319af49aa006659c271c3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!131 &13100000
 GUITexture:
   m_ObjectHideFlags: 1

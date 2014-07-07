@@ -52,10 +52,16 @@ public class GUIHandler : MonoBehaviour {
 		
 		cells = cellList.ToArray();
 	}
-	
+	int loseDelay = 120;
+	int loseCounter = 0;
 	// Update is called once per frame
 	void Update () {
-	
+		if (loseCounter > 0){
+			loseCounter --;
+			if (loseCounter <= 0){
+				Restart ();
+			}
+		}
 	}
 	
 	public void LosePower () {
@@ -67,7 +73,9 @@ public class GUIHandler : MonoBehaviour {
 			}
 		}
 		
-		Debug.Log ("RAMPAGE!");
+		//RAMPAGE
+		isRampaging = true;
+		AudioPlayer.Play ("Rampage-01", Rickie.rickie.gameObject);
 	}
 	
 	public void RampageTick () {
@@ -79,11 +87,17 @@ public class GUIHandler : MonoBehaviour {
 			}
 		}
 		Debug.Log ("GAME OVER");
-		Application.LoadLevel(Application.loadedLevel);
+		AudioPlayer.Play ("YouLose-01", Rickie.rickie.gameObject);
+		Time.timeScale = 0;
+		loseCounter = loseDelay;
 	}
 	
+	void Restart () {
+		Application.LoadLevel(Application.loadedLevel);
+	}
+	private bool isRampaging;
 	public void AddPower(int value){
-		if (Rickie.rickie.IsRampaging){
+		if (isRampaging){
 			return;
 		}
 		int index = 0;
