@@ -22,7 +22,6 @@ public class PowerCell : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (transform.localScale.magnitude > initScale.magnitude){
-			float lerpAmount = shrinkTimer / shrinkTiming;
 			transform.localScale = Vector3.Lerp (initScale * growAmount, initScale, shrinkTimer / shrinkTiming);
 			shrinkTimer += Time.deltaTime;
 			if (shrinkTimer >= shrinkTiming){

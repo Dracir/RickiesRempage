@@ -117,19 +117,18 @@ public class GameObjectCreator {
 		propComp.pointsForHited = 10;
 
 		FoodSpawner fs = prop.AddComponent<FoodSpawner>();
-		fs.minFood = 2;
-		fs.minFood = 3;
+		fs.chanceToSpawn = 0.35f;
 	}
 
 	public void createGarbage(Vector2 position){
-		createProps (position, "Sprite/Props/LevelSprite-GarbageCan");
+		createProps (position, "Sprite/Props/LevelSprite-GarbageCan","Hit_Metal_Small", "Destruction_Wood_Medium");
 	}
 
 	public void createRecycle(Vector2 position){
-		createProps (position, "Sprite/Props/LevelSprite-RecycleBin");
+		createProps (position, "Sprite/Props/LevelSprite-RecycleBin","Hit_Plastic_Medium", "Destruction_Wood_Medium");
 	}
 
-	public void createProps(Vector2 position, string spriteName){
+	public void createProps(Vector2 position, string spriteName, string hitSound, string destroySound){
 		GameObject prop = createSpriteGameObject (props.transform, -2, null, position, GARBAGE_COLLIDER_SIZE, true);
 
 		ItemIntegrity itemIntegrity = prop.AddComponent<ItemIntegrity>();
@@ -138,18 +137,17 @@ public class GameObjectCreator {
 		Props propComp = prop.AddComponent<Props> ();
 		propComp.setName (spriteName);
 		propComp.destroyedShake = 0.35f;
-		propComp.destructionSound = "Destruction_Glass_Big";
+		propComp.destructionSound = destroySound;
 		propComp.halfLifeShake = 0.4f;
 		propComp.hitShake = 0.15f;
-		propComp.hitSound = "Destruction_Rock_Medium";
+		propComp.hitSound = hitSound;
 		propComp.shakeStrenght = 0.1f;
 		propComp.destroyedTranslation = new Vector3 (0,-0.3f,0);
 		propComp.pointsForDestroyed = 54;
 		propComp.pointsForHited = 5;
 
 		FoodSpawner fs = prop.AddComponent<FoodSpawner>();
-		fs.minFood = 0;
-		fs.minFood = 1;
+		fs.chanceToSpawn = 0.05f;
 
 		prop.AddComponent<RemovedByInvisibleWall> ();
 	}

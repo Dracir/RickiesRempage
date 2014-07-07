@@ -4,8 +4,7 @@ using System.Collections;
 public class FoodSpawner : MonoBehaviour {
 	
 	private Food[] foodStuffs;
-	public int minFood = 0;
-	public int maxFood = 1;
+	public float chanceToSpawn;
 	
 	// Use this for initialization
 	void Start () {
@@ -13,10 +12,15 @@ public class FoodSpawner : MonoBehaviour {
 	}
 	
 	public void SpawnFood () {
-		int nb = Random.Range (minFood, maxFood);
-		for (int i = 0; i < nb; i++) {
+		float rng = Random.Range (0f, 1f);
+		if (rng <= chanceToSpawn) {
 			int index = Random.Range (0, foodStuffs.Length);	
-			Instantiate(foodStuffs[index], transform.position, transform.rotation);
+			if(index == 0){
+				AudioPlayer.Play("Food_Drop_Banana",this.gameObject);
+			}else{
+				AudioPlayer.Play("Food_Drop_Regular",this.gameObject);
+			}
+			Instantiate(foodStuffs[index], transform.position, transform.rotation);	
 		}
 	}
 }

@@ -5,7 +5,7 @@ public class EndlessWorld : MonoBehaviour {
 
 	public GameObjectCreator creator;
 
-	public Vector2 createdWorldDimension;
+	public Vector2 createdWorldDimension = new Vector3(0,0,0);
 
 	public int seed;
 	public Random random;
@@ -15,9 +15,17 @@ public class EndlessWorld : MonoBehaviour {
 
 	void Start () {
 		random = new Random ();
-		Random.seed = seed;
 		createdWorldDimension = Vector2.zero;
 		creator.createNewWorld ();
+
+		generateTutoStuff ();
+	}
+
+	private void generateTutoStuff(){
+		Food[] foodStuffs = Resources.LoadAll<Food>("Prefabs/Food/");
+		Instantiate(foodStuffs[0], new Vector3(70,0.5f,0), transform.rotation);
+		Instantiate(foodStuffs[0], new Vector3(77,0.5f,0), transform.rotation);
+		Instantiate(foodStuffs[1], new Vector3(83,0.5f,0), transform.rotation);
 	}
 
 	void Update () {

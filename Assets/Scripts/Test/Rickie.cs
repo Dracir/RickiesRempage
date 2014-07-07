@@ -25,6 +25,7 @@ public class Rickie : MonoBehaviour {
 		public string punch = "Character_Swoosh_Punch";
 		public string kick = "Character_Swoosh_Kick";
 		public string jump = "Character_Jump";
+		public string munch = "Character_Munch";
 	}
 	private SoundNames sounds = new SoundNames();
 	
@@ -386,6 +387,7 @@ public class Rickie : MonoBehaviour {
 		currentPower = Mathf.Min (currentPower + value, maxPower);
 		GUIHandler.instance.AddPower(value);
 		
+		AudioPlayer.Play (sounds.munch, gameObject);
 	}
 }
 
