@@ -75,7 +75,7 @@ public class GUIHandler : MonoBehaviour {
 		
 		//RAMPAGE
 		isRampaging = true;
-		AudioPlayer.Play ("Rampage-01");
+		AudioPlayer.Play ("Rampage-01", Rickie.rickie.gameObject);
 	}
 	
 	public void RampageTick () {
