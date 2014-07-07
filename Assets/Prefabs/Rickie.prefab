@@ -44,6 +44,7 @@ GameObject:
   - 61: {fileID: 6100000}
   - 114: {fileID: 11400004}
   - 95: {fileID: 9500000}
+  - 81: {fileID: 8100000}
   m_Layer: 0
   m_Name: Rickie
   m_TagString: Untagged
@@ -82,7 +83,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.1206708, y: -.369182825, z: 0}
+  m_LocalPosition: {x: 65, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400002}
@@ -100,6 +101,13 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 1, y: 2}
   m_Center: {x: 0, y: 1.0333333}
+--- !u!81 &8100000
+AudioListener:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
 --- !u!95 &9500000
 Animator:
   serializedVersion: 3
