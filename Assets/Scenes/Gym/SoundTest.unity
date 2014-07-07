@@ -74,1535 +74,6 @@ NavMeshSettings:
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
   m_NavMesh: {fileID: 0}
---- !u!1 &110798680
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-  m_PrefabInternal: {fileID: 205060264}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 110798682}
-  - 114: {fileID: 110798681}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &110798681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb,
-    type: 2}
-  m_PrefabInternal: {fileID: 205060264}
-  m_GameObject: {fileID: 110798680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9cce7c2c5199c348b8db73e120ac2c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  music:
-  - references: {fileID: 110798681}
-    name: Rampage
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: 2771fb3e5a1fcf94796d56a7eb54b4e3, type: 3}
-    loop: 1
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: 0
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 0
-    spread: 0
-    maxDistance: 500
-  sFX:
-  - references: {fileID: 110798681}
-    name: Character_Jump
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: 78945cee08beca24484d3ed017c95fd3, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: 0
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: Character_Swoosh_Kick
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: dfcbca6e55bb0c443bae83e01e9205a5, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: 0
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: Character_Swoosh_Punch
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: 4ba21eec1a94ae4478fad924f830aec6, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: 0
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: Destruction_Glass_Big
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: b15a59fc1b806924aa2702dc6f7acef5, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: .25
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: Destruction_Glass_Medium
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: 92cb38cb4d44ec44787f459ee29ffc57, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: .25
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: Destruction_Glass_Small
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: cede6a8775d371043866a87d92aeb993, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: .25
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: Destruction_Multiple_Big
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: 6d60cf33b56acd74aabbef6ed1706368, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: .25
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: Destruction_Rock_Big
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: ec8c52c293d89b34bb75fed2d4183355, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: .25
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: Destruction_Rock_Medium
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: 6495d459096df3e4897a4caa25ab97d3, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: .25
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: Destruction_Rock_Small
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: 6d6e6e9ea5f733e419ae179dec1c7c70, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: .25
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: Destruction_Wood_Big
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: d5ff4602317eef144a6b2a12e5e2d4c1, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: .25
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: Destruction_Wood_Medium
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: 33831a8e0d2eeb945b5592e82c4e595c, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: .25
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: Destruction_Wood_Small
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: e16ed2729aa2ab243a4a40b5830c6f48, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: .25
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: Hit_Metal_Big
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: 43ebfe78e15a96541af751f131da3d9b, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: .25
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: Hit_Metal_Medium
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: 7f8a8ff9bea3bec4ebc97e04b2fa4ceb, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: .25
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: Hit_Metal_Small
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: 277a8b19bc61187409f10bbbad84280b, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: .25
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: Menu_Move
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: a0b81d4000de0584dade55fe8d288a3c, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: 0
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: Menu_Pause-01
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: b7e46170b2906c4489bba6e07a4261fa, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: 0
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: Menu_Pause-02
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: 65c551484ffcca949bcfd9a8702673d6, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: 0
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: Menu_Pause-03
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: bfa7bf7680840d74dbb15413f18f9404, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: 0
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: Menu_Play-01
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: 4450fa7495a30a443aba2606d7e5256f, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: 0
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: Menu_Play-02
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: 53fe140580876c74089497d57d468736, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: 0
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: Menu_Play-03
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: 64547877670588549955e67e7134e819, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: 0
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: Menu_Select
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: ed45f3b881d49e249a73f527ee17626b, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: 0
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: Voice_Rampage-01
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: 6094d9e31cefd2b47afe64f0b4139809, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: 0
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: Voice_Rampage-02
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: 65b0307f6f71b3147b1f6c571948a780, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: 0
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: Voice_Rampage-03
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: 996353994acea6b41ad0ed740bc8f7e6, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: 0
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: Voice_RickysRampage_v1-01
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: ba5342cfee5efdf4092b351ebfaf216b, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: 0
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: Voice_RickysRampage_v1-02
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: ed2bb08d726dd7d4393b9dbb49495896, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: 0
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: Voice_RickysRampage_v1-03
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: 6b5e0638f884eba4682b5670b040a6da, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: 0
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: Voice_RickysRampage_v2-01
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: 89efde130347b9d419cf527ad0c953c9, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: 0
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: Voice_RickysRampage_v2-02
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: ebd93f15f2212684391f4513e0d77e51, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: 0
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: Voice_RickysRampage_v2-03
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: c933aea6efa9ff4408e998123144c3ef, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: 0
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: Voice_RickysRampage_v3-01
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: 3e88aa61895188943bdf22262a5552fb, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: 0
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: Voice_RickysRampage_v3-02
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: ff4963b699b9f2845a04041249de4f33, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: 0
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: Voice_RickysRampage_v3-03
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: 94c7e5d37220f834f8bbe03ec01b75c2, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: 0
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: YouLose-01
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: 18676519c2880144d876fb455e423ee1, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: 0
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: YouLose-02
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: ad12c9f9d3291df45999d329db06f698, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: 0
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
-  - references: {fileID: 110798681}
-    name: YouLose-03
-    audioSource: {fileID: 0}
-    clip: {fileID: 8300000, guid: 816cfb8a094eeb5408f5bd65fdbc7dd2, type: 3}
-    loop: 0
-    priority: 128
-    volume: 1
-    pitch: 1
-    randomPitch: 0
-    dopplerLevel: 0
-    rolloffMode: 1
-    minDistance: 0
-    panLevel: 1
-    spread: 0
-    maxDistance: 500
---- !u!4 &110798682
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-  m_PrefabInternal: {fileID: 205060264}
-  m_GameObject: {fileID: 110798680}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootMapOrder: 0
---- !u!1001 &205060264
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.size
-      value: 39
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: m_RootMapOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[24].references
-      value: 
-      objectReference: {fileID: 110798681}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[24].name
-      value: Voice_Rampage-01
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[24].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 6094d9e31cefd2b47afe64f0b4139809, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[24].priority
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[24].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[24].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[24].rolloffMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[24].panLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[24].maxDistance
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[25].references
-      value: 
-      objectReference: {fileID: 110798681}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[25].name
-      value: Voice_Rampage-02
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[25].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 65b0307f6f71b3147b1f6c571948a780, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[25].priority
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[25].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[25].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[25].rolloffMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[25].panLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[25].maxDistance
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[26].references
-      value: 
-      objectReference: {fileID: 110798681}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[26].name
-      value: Voice_Rampage-03
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[26].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 996353994acea6b41ad0ed740bc8f7e6, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[26].priority
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[26].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[26].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[26].rolloffMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[26].panLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[26].maxDistance
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[27].references
-      value: 
-      objectReference: {fileID: 110798681}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[27].name
-      value: Voice_RickysRampage_v1-01
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[27].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: ba5342cfee5efdf4092b351ebfaf216b, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[27].priority
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[27].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[27].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[27].rolloffMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[27].panLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[27].maxDistance
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[28].references
-      value: 
-      objectReference: {fileID: 110798681}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[28].name
-      value: Voice_RickysRampage_v1-02
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[28].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: ed2bb08d726dd7d4393b9dbb49495896, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[28].priority
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[28].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[28].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[28].rolloffMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[28].panLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[28].maxDistance
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[29].references
-      value: 
-      objectReference: {fileID: 110798681}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[29].name
-      value: Voice_RickysRampage_v1-03
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[29].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 6b5e0638f884eba4682b5670b040a6da, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[29].priority
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[29].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[29].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[29].rolloffMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[29].panLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[29].maxDistance
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[30].references
-      value: 
-      objectReference: {fileID: 110798681}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[30].name
-      value: Voice_RickysRampage_v2-01
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[30].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 89efde130347b9d419cf527ad0c953c9, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[30].priority
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[30].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[30].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[30].rolloffMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[30].panLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[30].maxDistance
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[31].references
-      value: 
-      objectReference: {fileID: 110798681}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[31].name
-      value: Voice_RickysRampage_v2-02
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[31].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: ebd93f15f2212684391f4513e0d77e51, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[31].priority
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[31].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[31].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[31].rolloffMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[31].panLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[31].maxDistance
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[0].name
-      value: Character_Jump
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[0].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 78945cee08beca24484d3ed017c95fd3, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[0].randomPitch
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[1].name
-      value: Character_Swoosh_Kick
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[1].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: dfcbca6e55bb0c443bae83e01e9205a5, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[2].name
-      value: Character_Swoosh_Punch
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[2].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 4ba21eec1a94ae4478fad924f830aec6, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[3].name
-      value: Destruction_Glass_Big
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[3].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: b15a59fc1b806924aa2702dc6f7acef5, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[3].randomPitch
-      value: .25
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[4].name
-      value: Destruction_Glass_Medium
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[4].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 92cb38cb4d44ec44787f459ee29ffc57, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[5].name
-      value: Destruction_Glass_Small
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[5].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: cede6a8775d371043866a87d92aeb993, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[6].name
-      value: Destruction_Multiple_Big
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[6].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 6d60cf33b56acd74aabbef6ed1706368, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[7].name
-      value: Destruction_Rock_Big
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[7].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: ec8c52c293d89b34bb75fed2d4183355, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[8].name
-      value: Destruction_Rock_Medium
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[8].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 6495d459096df3e4897a4caa25ab97d3, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[9].name
-      value: Destruction_Rock_Small
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[9].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 6d6e6e9ea5f733e419ae179dec1c7c70, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[10].name
-      value: Destruction_Wood_Big
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[10].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: d5ff4602317eef144a6b2a12e5e2d4c1, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[11].name
-      value: Destruction_Wood_Medium
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[11].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 33831a8e0d2eeb945b5592e82c4e595c, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[12].name
-      value: Destruction_Wood_Small
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[12].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: e16ed2729aa2ab243a4a40b5830c6f48, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[13].name
-      value: Hit_Metal_Big
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[13].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 43ebfe78e15a96541af751f131da3d9b, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[14].name
-      value: Hit_Metal_Medium
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[14].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 7f8a8ff9bea3bec4ebc97e04b2fa4ceb, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[15].name
-      value: Hit_Metal_Small
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[15].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 277a8b19bc61187409f10bbbad84280b, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[16].name
-      value: Menu_Move
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[16].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: a0b81d4000de0584dade55fe8d288a3c, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[17].name
-      value: Menu_Pause-01
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[17].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: b7e46170b2906c4489bba6e07a4261fa, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[18].name
-      value: Menu_Pause-02
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[18].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 65c551484ffcca949bcfd9a8702673d6, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[19].name
-      value: Menu_Pause-03
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[19].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: bfa7bf7680840d74dbb15413f18f9404, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[20].name
-      value: Menu_Play-01
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[20].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 4450fa7495a30a443aba2606d7e5256f, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[21].name
-      value: Menu_Play-02
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[21].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 53fe140580876c74089497d57d468736, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[22].name
-      value: Menu_Play-03
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[22].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 64547877670588549955e67e7134e819, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[23].name
-      value: Menu_Select
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[23].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: ed45f3b881d49e249a73f527ee17626b, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[1].randomPitch
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[4].randomPitch
-      value: .25
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sortSFX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[2].randomPitch
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[5].randomPitch
-      value: .25
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[32].references
-      value: 
-      objectReference: {fileID: 110798681}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[32].name
-      value: Voice_RickysRampage_v2-03
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[32].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: c933aea6efa9ff4408e998123144c3ef, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[32].priority
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[32].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[32].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[32].rolloffMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[32].panLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[32].maxDistance
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[33].references
-      value: 
-      objectReference: {fileID: 110798681}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[33].name
-      value: Voice_RickysRampage_v3-01
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[33].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 3e88aa61895188943bdf22262a5552fb, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[33].priority
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[33].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[33].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[33].rolloffMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[33].panLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[33].maxDistance
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[34].references
-      value: 
-      objectReference: {fileID: 110798681}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[34].name
-      value: Voice_RickysRampage_v3-02
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[34].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: ff4963b699b9f2845a04041249de4f33, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[34].priority
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[34].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[34].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[34].rolloffMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[34].panLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[34].maxDistance
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[35].references
-      value: 
-      objectReference: {fileID: 110798681}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[35].name
-      value: Voice_RickysRampage_v3-03
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[35].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 94c7e5d37220f834f8bbe03ec01b75c2, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[35].priority
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[35].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[35].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[35].rolloffMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[35].panLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[35].maxDistance
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[36].references
-      value: 
-      objectReference: {fileID: 110798681}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[36].name
-      value: YouLose-01
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[36].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 18676519c2880144d876fb455e423ee1, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[36].priority
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[36].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[36].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[36].rolloffMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[36].panLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[36].maxDistance
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[37].references
-      value: 
-      objectReference: {fileID: 110798681}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[37].name
-      value: YouLose-02
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[37].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: ad12c9f9d3291df45999d329db06f698, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[37].priority
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[37].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[37].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[37].rolloffMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[37].panLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[37].maxDistance
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[38].references
-      value: 
-      objectReference: {fileID: 110798681}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[38].name
-      value: YouLose-03
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[38].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 816cfb8a094eeb5408f5bd65fdbc7dd2, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[38].priority
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[38].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[38].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[38].rolloffMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[38].panLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[38].maxDistance
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[39].references
-      value: 
-      objectReference: {fileID: 110798681}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[39].name
-      value: Menu_Move
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[39].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: a0b81d4000de0584dade55fe8d288a3c, type: 3}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[39].priority
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[39].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[39].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[39].rolloffMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[39].panLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[39].maxDistance
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[6].randomPitch
-      value: .25
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[7].randomPitch
-      value: .25
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[8].randomPitch
-      value: .25
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[9].randomPitch
-      value: .25
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[10].randomPitch
-      value: .25
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[11].randomPitch
-      value: .25
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[12].randomPitch
-      value: .25
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[13].randomPitch
-      value: .25
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[14].randomPitch
-      value: .25
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-      propertyPath: sFX.Array.data[15].randomPitch
-      value: .25
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_DeprecatedTransformRoot: {fileID: 0}
-    m_DeprecatedTransformMap: {}
-    m_DeprecatedTransformComplete: 1
-  m_ParentPrefab: {fileID: 100100000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
-  m_RootGameObject: {fileID: 110798680}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
 --- !u!1 &866124835
 GameObject:
   m_ObjectHideFlags: 0
@@ -1642,7 +113,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootMapOrder: 1
+  m_RootMapOrder: 0
 --- !u!82 &866124838
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1701,6 +172,785 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!1001 &1247602266
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+      propertyPath: m_RootMapOrder
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_DeprecatedTransformRoot: {fileID: 0}
+    m_DeprecatedTransformMap: {}
+    m_DeprecatedTransformComplete: 0
+  m_ParentPrefab: {fileID: 100100000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+  m_RootGameObject: {fileID: 1510915604}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
+--- !u!1 &1510915604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+  m_PrefabInternal: {fileID: 1247602266}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1510915606}
+  - 114: {fileID: 1510915605}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1510915605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 5a896c9518bf6484180e961ce06bb0fb,
+    type: 2}
+  m_PrefabInternal: {fileID: 1247602266}
+  m_GameObject: {fileID: 1510915604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9cce7c2c5199c348b8db73e120ac2c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  music:
+  - references: {fileID: 1510915605}
+    name: Rampage
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 2771fb3e5a1fcf94796d56a7eb54b4e3, type: 3}
+    loop: 1
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 0
+    spread: 0
+    maxDistance: 500
+  sFX:
+  - references: {fileID: 1510915605}
+    name: Character_Jump
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 78945cee08beca24484d3ed017c95fd3, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Character_Swoosh_Kick
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: dfcbca6e55bb0c443bae83e01e9205a5, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Character_Swoosh_Punch
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 4ba21eec1a94ae4478fad924f830aec6, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Destruction_Glass_Big
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: b15a59fc1b806924aa2702dc6f7acef5, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: .25
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Destruction_Glass_Medium
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 92cb38cb4d44ec44787f459ee29ffc57, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: .25
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Destruction_Glass_Small
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: cede6a8775d371043866a87d92aeb993, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: .25
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Destruction_Multiple_Big
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 6d60cf33b56acd74aabbef6ed1706368, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Destruction_Rock_Big
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: ec8c52c293d89b34bb75fed2d4183355, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Destruction_Rock_Medium
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 6495d459096df3e4897a4caa25ab97d3, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Destruction_Rock_Small
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 6d6e6e9ea5f733e419ae179dec1c7c70, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Destruction_Wood_Big
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: d5ff4602317eef144a6b2a12e5e2d4c1, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Destruction_Wood_Medium
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 33831a8e0d2eeb945b5592e82c4e595c, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Destruction_Wood_Small
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: e16ed2729aa2ab243a4a40b5830c6f48, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Hit_Metal_Big
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 43ebfe78e15a96541af751f131da3d9b, type: 3}
+    loop: 0
+    priority: 128
+    volume: .699999988
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Hit_Metal_Medium
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 7f8a8ff9bea3bec4ebc97e04b2fa4ceb, type: 3}
+    loop: 0
+    priority: 128
+    volume: .699999988
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Hit_Metal_Small
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 277a8b19bc61187409f10bbbad84280b, type: 3}
+    loop: 0
+    priority: 128
+    volume: .699999988
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Menu_Move
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: a0b81d4000de0584dade55fe8d288a3c, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Menu_Pause-01
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: b7e46170b2906c4489bba6e07a4261fa, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Menu_Pause-02
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 65c551484ffcca949bcfd9a8702673d6, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Menu_Pause-03
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: bfa7bf7680840d74dbb15413f18f9404, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Menu_Play-01
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 4450fa7495a30a443aba2606d7e5256f, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Menu_Play-02
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 53fe140580876c74089497d57d468736, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Menu_Play-03
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 64547877670588549955e67e7134e819, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Menu_Select
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: ed45f3b881d49e249a73f527ee17626b, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Voice_Rampage-01
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 6094d9e31cefd2b47afe64f0b4139809, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Voice_Rampage-02
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 65b0307f6f71b3147b1f6c571948a780, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Voice_Rampage-03
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 996353994acea6b41ad0ed740bc8f7e6, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Voice_RickysRampage_v1-01
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: ba5342cfee5efdf4092b351ebfaf216b, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Voice_RickysRampage_v1-02
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: ed2bb08d726dd7d4393b9dbb49495896, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Voice_RickysRampage_v1-03
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 6b5e0638f884eba4682b5670b040a6da, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Voice_RickysRampage_v2-01
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 89efde130347b9d419cf527ad0c953c9, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Voice_RickysRampage_v2-02
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: ebd93f15f2212684391f4513e0d77e51, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Voice_RickysRampage_v2-03
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: c933aea6efa9ff4408e998123144c3ef, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Voice_RickysRampage_v3-01
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 3e88aa61895188943bdf22262a5552fb, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Voice_RickysRampage_v3-02
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: ff4963b699b9f2845a04041249de4f33, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Voice_RickysRampage_v3-03
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 94c7e5d37220f834f8bbe03ec01b75c2, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: YouLose-01
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 18676519c2880144d876fb455e423ee1, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: YouLose-02
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: ad12c9f9d3291df45999d329db06f698, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: YouLose-03
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 816cfb8a094eeb5408f5bd65fdbc7dd2, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Character_Munch
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 61eda28465afd2f46bcd4f6e8e378ef2, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: .5
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Hit_Plastic_Big
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 4f70685047171724597550840b03399f, type: 3}
+    loop: 0
+    priority: 128
+    volume: .800000012
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Hit_Plastic_Medium
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: e49675e333bdc1b4fabda5178ac281ae, type: 3}
+    loop: 0
+    priority: 128
+    volume: .800000012
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Hit_Plastic_Small
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: d167f2b56a5a0c64c9da3a7ed745cc70, type: 3}
+    loop: 0
+    priority: 128
+    volume: .800000012
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Food_Drop_Regular
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 4b447477f793ad543818913921c697bb, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: .5
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+  - references: {fileID: 1510915605}
+    name: Food_Drop_Banana
+    audioSource: {fileID: 0}
+    clip: {fileID: 8300000, guid: 31e5337667cb72640bb53baf767ee84b, type: 3}
+    loop: 0
+    priority: 128
+    volume: 1
+    pitch: 1
+    randomPitch: 0
+    dopplerLevel: 0
+    rolloffMode: 1
+    minDistance: 0
+    panLevel: 1
+    spread: 0
+    maxDistance: 500
+--- !u!4 &1510915606
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 5a896c9518bf6484180e961ce06bb0fb, type: 2}
+  m_PrefabInternal: {fileID: 1247602266}
+  m_GameObject: {fileID: 1510915604}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootMapOrder: 2
 --- !u!1 &2005023393
 GameObject:
   m_ObjectHideFlags: 0
@@ -1735,4 +985,4 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootMapOrder: 2
+  m_RootMapOrder: 1
