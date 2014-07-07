@@ -9,8 +9,8 @@ public class EndlessWorld : MonoBehaviour {
 
 	public int seed;
 	public Random random;
-	public int worldCreationDistance=2;
-	public int worldCreationWidthToCreate=1;
+	public int worldCreationDistance=20;
+	public int worldCreationWidthToCreate=20;
 	public float remainingWithInARow = 0;
 
 	void Start () {

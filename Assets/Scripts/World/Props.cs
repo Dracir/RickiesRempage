@@ -64,7 +64,10 @@ public class Props : MonoBehaviour {
 	
 	void Destroyed() {
 		sr.sprite = sprites[3];
+
+		AudioPlayer.Play(this.hitSound,this.gameObject);	
 		AudioPlayer.Play(this.destructionSound,this.gameObject);
+
 		Destroy (this.GetComponent<BoxCollider2D> ());
 		startShake (destroyedShake);
 		this.transform.Translate(destroyedTranslation);
